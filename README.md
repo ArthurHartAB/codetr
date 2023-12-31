@@ -1,2 +1,2 @@
-# Co-DETR
+# CODETR
 First stage detector
