@@ -6,12 +6,13 @@ custom_imports = dict(
 # model settings
 num_dec_layer = 6
 loss_lambda = 2.0
-num_classes = 80
+num_classes = 4  # 80 arthur
 
 image_size = (1024, 1024)
 batch_augments = [
     dict(type='BatchFixedSizePad', size=image_size, pad_mask=True)
 ]
+
 model = dict(
     type='CoDETR',
     # If using the lsj augmentation,
@@ -253,7 +254,8 @@ model = dict(
         dict(
             max_per_img=300,
             # NMS can improve the mAP by 0.2.
-            nms=dict(type='soft_nms', iou_threshold=0.8)),
+            # nms=dict(type='soft_nms', iou_threshold=0.8) ############# arthur
+        ),
         dict(
             rpn=dict(
                 nms_pre=1000,
@@ -350,7 +352,8 @@ param_scheduler = [
 ]
 
 default_hooks = dict(
-    checkpoint=dict(by_epoch=True, interval=1, max_keep_ckpts=3))
+    checkpoint=dict(by_epoch=True, interval=1, max_keep_ckpts=3),
+)
 log_processor = dict(by_epoch=True)
 
 # NOTE: `auto_scale_lr` is for automatically scaling LR,

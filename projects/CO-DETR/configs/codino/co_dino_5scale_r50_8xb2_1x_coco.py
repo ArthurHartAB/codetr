@@ -47,12 +47,15 @@ train_dataloader = dict(
     dataset=dict(
         _delete_=True,
         type=_base_.dataset_type,
-        data_root=_base_.data_root,
-        ann_file='annotations/instances_train2017.json',
-        data_prefix=dict(img='train2017/'),
+        data_root='/media/DATADISK/bdd_dataset/',
+        # ann_file='annotations/instances_train2017.json',
+        ann_file='/media/DATADISK/bdd_dataset/labels_coco/bdd100k_labels_images_train_coco.json',
+        # data_prefix=dict(img='train2017/'),
+        data_prefix=dict(img='train/'),
         filter_cfg=dict(filter_empty_gt=False, min_size=32),
         pipeline=train_pipeline,
-        backend_args=_base_.backend_args))
+        # backend_args=_base_.backend_args
+    ))
 
 test_pipeline = [
     dict(type='LoadImageFromFile', backend_args=_base_.backend_args),
@@ -65,4 +68,5 @@ test_pipeline = [
 ]
 
 val_dataloader = dict(dataset=dict(pipeline=test_pipeline))
+
 test_dataloader = val_dataloader
