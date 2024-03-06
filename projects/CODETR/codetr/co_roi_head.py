@@ -44,7 +44,7 @@ class CoStandardRoIHead(StandardRoIHead):
         losses = dict()
         # bbox head forward and loss
         if self.with_bbox:
-            bbox_results = self.bbox_loss(x, sampling_results)
+            bbox_results = self.bbox_loss(x, sampling_results)  # here ??
             losses.update(bbox_results['loss_bbox'])
 
             bbox_targets = bbox_results['bbox_targets']

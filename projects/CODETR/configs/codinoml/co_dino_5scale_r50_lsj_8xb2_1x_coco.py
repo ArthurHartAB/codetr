@@ -6,7 +6,7 @@ custom_imports = dict(
 # model settings
 num_dec_layer = 6
 loss_lambda = 2.0
-num_classes = 6  # 80 arthur
+num_classes = 4  # 80 arthur
 
 image_size = (1024, 1024)
 batch_augments = [
@@ -48,14 +48,14 @@ model = dict(
         norm_cfg=dict(type='GN', num_groups=32),
         num_outs=5),
     query_head=dict(
-        type='CoDINOHead',
+        type='CoDINOHeadML',
         num_query=900,
         num_classes=num_classes,
         in_channels=2048,
         as_two_stage=True,
         dn_cfg=dict(
-            label_noise_scale=0.5,  # arthur : parameter!
-            box_noise_scale=1.0,  # arthur : parameter!
+            label_noise_scale=0.5,
+            box_noise_scale=1.0,
             group_cfg=dict(dynamic=True, num_groups=None, num_dn_queries=100)),
         transformer=dict(
             type='CoDinoTransformer',
@@ -110,9 +110,9 @@ model = dict(
             type='QualityFocalLoss',
             use_sigmoid=True,
             beta=2.0,
-            loss_weight=1.0),  # arthur : parameter!
-        loss_bbox=dict(type='L1Loss', loss_weight=5.0),  # arthur : parameter!
-        loss_iou=dict(type='GIoULoss', loss_weight=2.0)),  # arthur : parameter!
+            loss_weight=1.0),
+        loss_bbox=dict(type='L1Loss', loss_weight=5.0),
+        loss_iou=dict(type='GIoULoss', loss_weight=2.0)),
     rpn_head=dict(
         type='RPNHead',
         in_channels=256,
@@ -130,12 +130,12 @@ model = dict(
         loss_cls=dict(
             type='CrossEntropyLoss',
             use_sigmoid=True,
-            loss_weight=1.0 * num_dec_layer * loss_lambda),  # arthur : parameter!
+            loss_weight=1.0 * num_dec_layer * loss_lambda),
         loss_bbox=dict(
-            type='L1Loss', loss_weight=1.0 * num_dec_layer * loss_lambda)),  # arthur : parameter!
+            type='L1Loss', loss_weight=1.0 * num_dec_layer * loss_lambda)),
     roi_head=[
         dict(
-            type='CoStandardRoIHead',
+            type='CoStandardRoIHeadML',
             bbox_roi_extractor=dict(
                 type='SingleRoIExtractor',
                 roi_layer=dict(
@@ -158,14 +158,14 @@ model = dict(
                 loss_cls=dict(
                     type='CrossEntropyLoss',
                     use_sigmoid=False,
-                    loss_weight=1.0 * num_dec_layer * loss_lambda),  # arthur : parameter!
+                    loss_weight=1.0 * num_dec_layer * loss_lambda),
                 loss_bbox=dict(
                     type='GIoULoss',
-                    loss_weight=10.0 * num_dec_layer * loss_lambda)))  # arthur : parameter!
+                    loss_weight=10.0 * num_dec_layer * loss_lambda)))
     ],
     bbox_head=[
         dict(
-            type='CoATSSHead',
+            type='CoATSSHeadML',
             num_classes=num_classes,
             in_channels=256,
             stacked_convs=1,
@@ -183,16 +183,16 @@ model = dict(
             loss_cls=dict(
                 type='FocalLoss',
                 use_sigmoid=True,
-                gamma=2.0,  # arthur : parameter!
-                alpha=0.25,  # arthur : parameter!
-                loss_weight=1.0 * num_dec_layer * loss_lambda),  # arthur : parameter!
+                gamma=2.0,
+                alpha=0.25,
+                loss_weight=1.0 * num_dec_layer * loss_lambda),
             loss_bbox=dict(
                 type='GIoULoss',
-                loss_weight=2.0 * num_dec_layer * loss_lambda),  # arthur : parameter!
+                loss_weight=2.0 * num_dec_layer * loss_lambda),
             loss_centerness=dict(
                 type='CrossEntropyLoss',
                 use_sigmoid=True,
-                loss_weight=1.0 * num_dec_layer * loss_lambda)),  # arthur : parameter!
+                loss_weight=1.0 * num_dec_layer * loss_lambda)),
     ],
     # model training and testing settings
     train_cfg=[
@@ -200,20 +200,17 @@ model = dict(
             assigner=dict(
                 type='HungarianAssigner',
                 match_costs=[
-                    # arthur : parameter!
                     dict(type='FocalLossCost', weight=2.0),
-                    dict(type='BBoxL1Cost', weight=5.0,
-                         box_format='xywh'),  # arthur : parameter!
-                    dict(type='IoUCost', iou_mode='giou',
-                         weight=2.0)  # arthur : parameter!
+                    dict(type='BBoxL1Cost', weight=5.0, box_format='xywh'),
+                    dict(type='IoUCost', iou_mode='giou', weight=2.0)
                 ])),
         dict(
             rpn=dict(
                 assigner=dict(
                     type='MaxIoUAssigner',
-                    pos_iou_thr=0.7,  # arthur : parameter!
-                    neg_iou_thr=0.3,  # arthur : parameter!
-                    min_pos_iou=0.3,  # arthur : parameter!
+                    pos_iou_thr=0.7,
+                    neg_iou_thr=0.3,
+                    min_pos_iou=0.3,
                     match_low_quality=True,
                     ignore_iof_thr=-1),
                 sampler=dict(
@@ -233,9 +230,9 @@ model = dict(
             rcnn=dict(
                 assigner=dict(
                     type='MaxIoUAssigner',
-                    pos_iou_thr=0.5,  # arthur : parameter!
-                    neg_iou_thr=0.5,  # arthur : parameter!
-                    min_pos_iou=0.5,  # arthur : parameter!
+                    pos_iou_thr=0.5,
+                    neg_iou_thr=0.5,
+                    min_pos_iou=0.5,
                     match_low_quality=False,
                     ignore_iof_thr=-1),
                 sampler=dict(
@@ -247,7 +244,7 @@ model = dict(
                 pos_weight=-1,
                 debug=False)),
         dict(
-            assigner=dict(type='ATSSAssigner', topk=9),  # arthur : parameter!
+            assigner=dict(type='ATSSAssigner', topk=9),
             allowed_border=-1,
             pos_weight=-1,
             debug=False)

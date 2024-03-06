@@ -423,7 +423,7 @@ class DETRHead(BaseModule):
 
         pred_instances = InstanceData(scores=cls_score, bboxes=bbox_pred)
         # assigner and sampler
-        assign_result = self.assigner.assign(
+        assign_result = self.assigner.assign(  # arthur : ASSIGNER!!! HUNGARIAN!!!
             pred_instances=pred_instances,
             gt_instances=gt_instances,
             img_meta=img_meta)

@@ -72,7 +72,8 @@ class CoDINOHead(DINOHead):
             f' be exactly 2 times of num_feats. Found {self.embed_dims}' \
             f' and {num_feats}.'
         """Initialize classification branch and regression branch of head."""
-        fc_cls = Linear(self.embed_dims, self.cls_out_channels)
+        fc_cls = Linear(self.embed_dims,
+                        self.cls_out_channels)  # arthur : here add additional outputs
         reg_branch = []
         for _ in range(self.num_reg_fcs):
             reg_branch.append(Linear(self.embed_dims, self.embed_dims))
@@ -167,6 +168,7 @@ class CoDINOHead(DINOHead):
         for lvl in range(hs.shape[0]):
             reference = inter_references[lvl]
             reference = inverse_sigmoid(reference, eps=1e-3)
+            # ## hs - hidden state. apply separator branch here (maybe only for the last level).
             outputs_class = self.cls_branches[lvl](hs[lvl])
             tmp = self.reg_branches[lvl](hs[lvl])
             if reference.shape[-1] == 4:
@@ -178,6 +180,7 @@ class CoDINOHead(DINOHead):
             outputs_classes.append(outputs_class)
             outputs_coords.append(outputs_coord)
 
+        # arthur : do class remapping here
         outputs_classes = torch.stack(outputs_classes)
         outputs_coords = torch.stack(outputs_coords)
 
@@ -316,6 +319,7 @@ class CoDINOHead(DINOHead):
 
         loss_inputs = outs[:-1] + (batch_gt_instances, batch_img_metas,
                                    dn_meta)
+        # arthur : create additional inputs with class remapping. gradients??
         losses = self.loss_by_feat(*loss_inputs)
         enc_outputs = outs[-1]
         return losses, enc_outputs
@@ -419,6 +423,9 @@ class CoDINOHead(DINOHead):
                                            head_idx)
         outs = self.forward_aux(x[:-1], batch_img_metas, aux_targets, head_idx)
         outs = outs + aux_targets
+
+        # add remapping option here
+
         if gt_labels is None:
             loss_inputs = outs + (gt_bboxes, batch_img_metas)
         else:
