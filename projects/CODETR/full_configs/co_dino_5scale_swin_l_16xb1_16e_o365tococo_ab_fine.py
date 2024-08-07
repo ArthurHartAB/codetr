@@ -1,12 +1,40 @@
+# import os
+# os.environ["CLEARML_CONFIG_FILE"] = '/home/ubuntu/arthur/codetr/projects/CODETR/clearml/clearml.conf'
+
+
 auto_scale_lr = dict(base_batch_size=16)
 backend_args = None
 
 custom_imports = dict(
     allow_failed_imports=False, imports=[
         'projects.CODETR.codetr',
+        'projects.CODETR.datasets',
+        'projects.CODETR.loops',
+        'projects.CODETR.runners',
+        'projects.CODETR.evaluation',
     ])
-data_root = 'data/coco/'
-dataset_type = 'CocoDataset'
+
+dataset_type = 'ABDataset'
+
+runner_type = 'ABRunner'
+
+num_classes = 4
+
+
+clear_ml_init = dict(
+    project_name="CoDETR",
+    task_name="test",
+    task_type="training",
+    reuse_last_task_id=False,
+    continue_last_task=False,
+    output_uri=None,
+    auto_connect_arg_parser=True,
+    auto_connect_frameworks=True,
+    auto_resource_monitoring=True,
+    auto_connect_streams=True,
+)
+
+
 default_hooks = dict(
     checkpoint=dict(
         _scope_='mmdet',
@@ -15,6 +43,7 @@ default_hooks = dict(
         max_keep_ckpts=3,
         type='CheckpointHook'),
     logger=dict(_scope_='mmdet', interval=10, type='LoggerHook'),
+    # logger=dict(_scope_='mmdet', type="ClearMLLoggerHook", interval=10),
     param_scheduler=dict(_scope_='mmdet', type='ParamSchedulerHook'),
     sampler_seed=dict(_scope_='mmdet', type='DistSamplerSeedHook'),
     timer=dict(_scope_='mmdet', type='IterTimerHook'),
@@ -112,7 +141,7 @@ model = dict(
                 loss_weight=12.0,
                 type='FocalLoss',
                 use_sigmoid=True),
-            num_classes=6,
+            num_classes=num_classes,
             stacked_convs=1,
             type='CoATSSHead'),
     ],
@@ -159,7 +188,7 @@ model = dict(
             type='QualityFocalLoss',
             use_sigmoid=True),
         loss_iou=dict(loss_weight=2.0, type='GIoULoss'),
-        num_classes=6,
+        num_classes=num_classes,
         num_query=900,
         positional_encoding=dict(
             normalize=True,
@@ -243,7 +272,7 @@ model = dict(
                     loss_weight=12.0,
                     type='CrossEntropyLoss',
                     use_sigmoid=False),
-                num_classes=6,
+                num_classes=num_classes,
                 reg_class_agnostic=False,
                 reg_decoded_bbox=True,
                 roi_feat_size=7,
@@ -377,7 +406,7 @@ model = dict(
     ],
     type='CoDETR',
     use_lsj=False)
-num_classes = 6
+
 num_dec_layer = 6
 optim_wrapper = dict(
     clip_grad=dict(max_norm=0.1, norm_type=2),
@@ -398,11 +427,11 @@ param_scheduler = [
 ]
 pretrained = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth'
 resume = False
-test_cfg = dict(_scope_='mmdet', type='TestLoop')
+test_cfg = dict(type='ABTestLoop')
 test_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/media/DATADISK/coco_datasets/amba_taiwan_train_0208/coco_labels_fine.json',
+        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -422,18 +451,57 @@ test_dataloader = dict(
                 type='PackDetInputs'),
         ],
         test_mode=True,
-        type='CocoDataset'),
+        type=dataset_type),
     drop_last=False,
     num_workers=2,
     persistent_workers=True,
     sampler=dict(_scope_='mmdet', shuffle=False, type='DefaultSampler'))
+
+test_crop_dataloader = dict(
+    batch_size=1,
+    dataset=dict(
+        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
+        data_prefix=dict(img='/'),
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(keep_ratio=True, scale=(
+                1920,
+                3840,
+            ), type='Resize'),
+
+            dict(
+                transforms=[
+                    dict(
+                        always_apply=True,
+                        height=600,
+                        type='CenterCrop',
+                        width=3840),
+                ],
+                type='Albu'),
+            dict(type='LoadAnnotations', with_bbox=True),
+            dict(
+                meta_keys=(
+                    'img_id',
+                    'img_path',
+                    'ori_shape',
+                    'img_shape',
+                    'scale_factor',
+                ),
+                type='PackDetInputs'),
+        ],
+        test_mode=True,
+        type=dataset_type),
+    drop_last=False,
+    num_workers=2,
+    persistent_workers=True,
+    sampler=dict(_scope_='mmdet', shuffle=False, type='DefaultSampler'))
+
 test_evaluator = dict(
-    _scope_='mmdet',
-    ann_file='/media/DATADISK/coco_datasets/amba_taiwan_train_0208/coco_labels_fine.json',
-    backend_args=None,
-    format_only=False,
-    metric='bbox',
-    type='CocoMetric')
+    type='CropEvaluator',
+    metrics=dict(type="TSVSaver",
+                 out_folder_path="/home/b2b/arthur/git/codetr/tsvsaver/")
+)
+
 test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(keep_ratio=True, scale=(
@@ -455,7 +523,7 @@ train_cfg = dict(max_epochs=16, type='EpochBasedTrainLoop', val_interval=1)
 train_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/media/DATADISK/coco_datasets/ab_train/coco_labels_fine.json',
+        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         filter_cfg=dict(filter_empty_gt=False, min_size=32),
         pipeline=[
@@ -616,10 +684,11 @@ train_dataloader = dict(
                 type='RandomChoice'),
             dict(type='PackDetInputs'),
         ],
-        type='CocoDataset'),
+        type=dataset_type),
     num_workers=2,
     persistent_workers=True,
     sampler=dict(_scope_='mmdet', shuffle=True, type='DefaultSampler'))
+
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
@@ -776,46 +845,19 @@ train_pipeline = [
         type='RandomChoice'),
     dict(type='PackDetInputs'),
 ]
-val_cfg = dict(_scope_='mmdet', type='ValLoop')
-val_dataloader = dict(
-    batch_size=1,
-    dataset=dict(
-        ann_file='/media/DATADISK/coco_datasets/amba_taiwan_train_0208/coco_labels_fine.json',
-        data_prefix=dict(img='/'),
-        pipeline=[
-            dict(type='LoadImageFromFile'),
-            dict(keep_ratio=True, scale=(
-                832,
-                3840,
-            ), type='Resize'),
-            dict(type='LoadAnnotations', with_bbox=True),
-            dict(
-                meta_keys=(
-                    'img_id',
-                    'img_path',
-                    'ori_shape',
-                    'img_shape',
-                    'scale_factor',
-                ),
-                type='PackDetInputs'),
-        ],
-        test_mode=True,
-        type='CocoDataset'),
-    drop_last=False,
-    num_workers=2,
-    persistent_workers=True,
-    sampler=dict(_scope_='mmdet', shuffle=False, type='DefaultSampler'))
-val_evaluator = dict(
-    _scope_='mmdet',
-    ann_file='/media/DATADISK/coco_datasets/amba_taiwan_train_0208/coco_labels_fine.json',
-    backend_args=None,
-    format_only=False,
-    metric='bbox',
-    type='CocoMetric')
+val_cfg = test_dataloader
+
+val_dataloader = test_dataloader
+
+val_crop_dataloader = test_crop_dataloader
+
+val_evaluator = test_evaluator
+
 vis_backends = [
     dict(type='LocalVisBackend'),
     dict(type='TensorboardVisBackend'),
 ]
+
 visualizer = dict(
     _scope_='mmdet',
     name='visualizer',
@@ -823,4 +865,13 @@ visualizer = dict(
     vis_backends=[
         dict(type='LocalVisBackend'),
         dict(type='TensorboardVisBackend'),
+        # dict(type="ClearMLVisBackend", init_kwargs=clear_ml_init)
     ])
+
+custom_hooks = [
+    dict(type='TSVHook'),
+    #    dict(type="ABEvalHook",
+    #         gt_path="/mnt/s3/b2b-datasets/workspace/datasets/manual_tagging/10_hard_images/annotations/gt.tsv",
+    #         config_path="/home/ubuntu/arthur/EvalBin/wrappers/wrapper_config_no_ignore.json"),
+    #    dict(type="ABKPIHook")
+]

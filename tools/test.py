@@ -66,6 +66,9 @@ def parse_args():
 def main():
     args = parse_args()
 
+    import sys
+    import os
+
     # Reduce the number of repeated compilations and improve
     # testing speed.
     setup_cache_size_limit_of_dynamo()

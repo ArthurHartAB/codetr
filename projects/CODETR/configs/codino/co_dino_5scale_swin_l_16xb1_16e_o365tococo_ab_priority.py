@@ -48,23 +48,6 @@ train_pipeline = [
 
     dict(type='RandomChoice',
          transforms=[
-             '''[dict(
-                 type='Albu',
-                 transforms=[dict(type='CenterCrop', height=300,
-                                  width=3840, always_apply=True)],
-                 bbox_params=dict(
-                     type='BboxParams',
-                     format='pascal_voc',
-                     label_fields=['gt_bboxes_labels', 'gt_ignore_flags'],
-                     min_visibility=0.0,
-                     filter_lost_elements=True),
-                 keymap={
-                     'img': 'image',
-                     'gt_masks': 'masks',
-                     'gt_bboxes': 'bboxes'
-                 },
-                 skip_img_without_anno=True)
-              ],'''
              [
                  dict(
                      type='RandomChoiceResize',
@@ -73,29 +56,7 @@ train_pipeline = [
                              (608, 2048), (640, 2048), (672, 2048), (704, 2048),
                              (736, 2048), (768, 2048)],
                      keep_ratio=True)
-             ]''',
-
-             [
-                 dict(
-                     type='RandomChoiceResize',
-                     # The radio of all image in train dataset < 7
-                     # follow the original implement
-                     scales=[(400, 4200), (500, 4200), (600, 4200)],
-                     keep_ratio=True),
-                 dict(
-                     type='RandomCrop',
-                     crop_type='absolute_range',
-                     crop_size=(384, 600),  # crop_size=(384, 600)
-                     allow_negative_crop=True),
-                 dict(
-                     type='RandomChoiceResize',
-                     scales=[(480, 2048), (512, 2048),
-                             (544, 2048), (576, 2048),
-                             (608, 2048), (640, 2048), (672, 2048), (704, 2048),
-                             (736, 2048), (768, 2048)],
-                     keep_ratio=True)
-             ]'''
-
+             ]
          ]),
     dict(type='PackDetInputs')
 ]
