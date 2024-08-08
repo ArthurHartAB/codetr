@@ -1,4 +1,4 @@
-## From https://github.com/cortica-iei/AB_AutoTagging_Inference
+# From https://github.com/cortica-iei/AB_AutoTagging_Inference
 
 from pathlib import Path
 from typing import Optional
@@ -77,12 +77,7 @@ class CoDetr:
                 remove = list(set(range(len(bboxes))) - set(keep.tolist()))
 
                 if len(remove) > 0:
-                    # print("NMS REMOVED : ", remove)
-                    # print("frame : ", len(frame))
                     for idx in remove:
-                        # print("bbox : ", bboxes[idx])
-                        # print("score : ", scores[idx])
-                        # print("label : ", label)
 
                         df.loc[df.index == (frame.index[idx]), 'label'] = \
                             df[df.index == (frame.index[idx])].label + '_nms'

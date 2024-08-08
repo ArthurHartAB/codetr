@@ -1,5 +1,5 @@
-# import os
-# os.environ["CLEARML_CONFIG_FILE"] = '/home/ubuntu/arthur/codetr/projects/CODETR/clearml/clearml.conf'
+import os
+os.environ["CLEARML_CONFIG_FILE"] = '/home/b2b/arthur/git/codetr/projects/CODETR/clearml/clearml.conf'
 
 
 auto_scale_lr = dict(base_batch_size=16)
@@ -54,7 +54,7 @@ env_cfg = dict(
     dist_cfg=dict(backend='nccl'),
     mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))
 
-load_from = 'https://download.openmmlab.com/mmdetection/v3.0/codetr/co_dino_5scale_swin_large_16e_o365tococo-614254c9.pth'
+load_from = '/home/b2b/arthur/git/codetr/weights/codetr_best.pth'
 
 log_level = 'INFO'
 log_processor = dict(
@@ -410,7 +410,7 @@ model = dict(
 num_dec_layer = 6
 optim_wrapper = dict(
     clip_grad=dict(max_norm=0.1, norm_type=2),
-    optimizer=dict(lr=0.0001, type='AdamW', weight_decay=0.0001),
+    optimizer=dict(lr=0.0001*0.1, type='AdamW', weight_decay=0.1*0.0001),
     paramwise_cfg=dict(custom_keys=dict(backbone=dict(lr_mult=0.1))),
     type='OptimWrapper')
 
@@ -425,7 +425,7 @@ param_scheduler = [
         ],
         type='MultiStepLR'),
 ]
-pretrained = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth'
+pretrained = '/home/b2b/arthur/git/codetr/weights/codetr_best.pth'
 resume = False
 test_cfg = dict(type='ABTestLoop')
 test_dataloader = dict(
@@ -523,7 +523,7 @@ train_cfg = dict(max_epochs=16, type='EpochBasedTrainLoop', val_interval=1)
 train_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
+        ann_file='/home/b2b/arthur/data/all_data_coco.json',
         data_prefix=dict(img='/'),
         filter_cfg=dict(filter_empty_gt=False, min_size=32),
         pipeline=[
@@ -716,7 +716,7 @@ train_pipeline = [
                     transforms=[
                         dict(
                             always_apply=True,
-                            height=300,
+                            height=600,
                             type='CenterCrop',
                             width=3840),
                     ],
@@ -845,7 +845,7 @@ train_pipeline = [
         type='RandomChoice'),
     dict(type='PackDetInputs'),
 ]
-val_cfg = test_dataloader
+val_cfg = dict(type='ABValLoop')
 
 val_dataloader = test_dataloader
 
@@ -870,8 +870,12 @@ visualizer = dict(
 
 custom_hooks = [
     dict(type='TSVHook'),
-    #    dict(type="ABEvalHook",
-    #         gt_path="/mnt/s3/b2b-datasets/workspace/datasets/manual_tagging/10_hard_images/annotations/gt.tsv",
-    #         config_path="/home/ubuntu/arthur/EvalBin/wrappers/wrapper_config_no_ignore.json"),
-    #    dict(type="ABKPIHook")
+    dict(type="ABEvalHook",
+         eval_path="/home/b2b/arthur/git/EvalBin",
+         gt_path="/home/b2b/arthur/data/10_hard_images/gt.tsv",
+         config_path="/home/b2b/arthur/git/EvalBin/wrappers/wrapper_config.json"),
+    dict(type="ABKPIHook"),
+    # dict(type="ABClearMLHook",
+    #     project_name="CODETR",
+    #     task_name="test")
 ]
