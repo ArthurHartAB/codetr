@@ -70,14 +70,9 @@ class ABEvalHook(Hook):
         update_config(self.config_path, output_dir,
                       cut_gt_path, det_path, config_new_path)
 
-        # --output_dir {output_dir} --ground_truth_path {cut_gt_path} --det_path {det_path}"
-        # --ground_truth_path {cut_gt_path} --det_path {det_path}"
         command = f"cd {self.eval_path} && /home/b2b/anaconda3/envs/od_arthur/bin/python3 worker.py --config {config_new_path}"
 
         os.system(command)
-        print("EVAL COMMAND EXECUTED!")
-
-        # run eval here
 
     def after_val_epoch(self, runner: Runner, metrics):
         self.after_test_epoch(runner, metrics)
@@ -94,27 +89,29 @@ def recall_from_pr_df(pr_df, precision_value=0.75):
 
         for bin in bins:
             cls_bin_pr = cls_pr[cls_pr.range == bin]
-            precisions = cls_bin_pr.precision.values[2:-2]
-            recalls = cls_bin_pr.recall.values[2:-2]
+            precisions = cls_bin_pr.precision.values  # [2:-2]
+            recalls = cls_bin_pr.recall.values  # [2:-2]
 
-            # Sort the arrays to ensure monotonic increase
-            sorted_indices = np.argsort(precisions)
+            # Sort by recalls
+            sorted_indices = np.argsort(recalls)[::-1]
             precisions = precisions[sorted_indices]
             recalls = recalls[sorted_indices]
 
-            # Remove duplicate precision values by keeping the max recall for each precision
-            unique_precisions, indices = np.unique(
-                precisions, return_index=True)
-            recalls = recalls[indices]
-
-            if len(unique_precisions) == 0 or len(recalls) == 0:
-                recall = 0.0
-            elif precision_value < unique_precisions.min():
-                recall = recalls[unique_precisions.argmin()]
-            elif precision_value > unique_precisions.max():
-                recall = recalls[unique_precisions.argmax()]
+            # Traverse through sorted values and apply the new logic
+            for i in range(len(precisions)):
+                if precisions[i] >= precision_value:
+                    if i == 0:
+                        recall = recalls[i]
+                    else:
+                        recall = np.interp(
+                            precision_value,
+                            [precisions[i-1], precisions[i]],
+                            [recalls[i-1], recalls[i]]
+                        )
+                    break
             else:
-                recall = np.interp(precision_value, unique_precisions, recalls)
+                # If no precision meets the target, use the last available recall
+                recall = recalls[-1]
 
             recalls_dict[cls][bin] = recall
 

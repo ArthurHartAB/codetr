@@ -431,7 +431,7 @@ test_cfg = dict(type='ABTestLoop')
 test_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
+        ann_file='/home/b2b/arthur/data/921_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -460,7 +460,7 @@ test_dataloader = dict(
 test_crop_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
+        ann_file='/home/b2b/arthur/data/921_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -520,175 +520,6 @@ test_pipeline = [
         type='PackDetInputs'),
 ]
 train_cfg = dict(max_epochs=16, type='EpochBasedTrainLoop', val_interval=1)
-train_dataloader = dict(
-    batch_size=1,
-    dataset=dict(
-        # '/home/b2b/arthur/data/all_data_coco.json'
-        ann_file='/home/b2b/arthur/data/10_hard_images/coco_labels.json',
-        data_prefix=dict(img='/'),
-        filter_cfg=dict(filter_empty_gt=False, min_size=32),
-        pipeline=[
-            dict(type='LoadImageFromFile'),
-            dict(type='LoadAnnotations', with_bbox=True),
-            dict(prob=0.5, type='RandomFlip'),
-            dict(scale=(
-                3840,
-                1920,
-            ), type='Resize'),
-            dict(
-                transforms=[
-                    [
-                        dict(
-                            bbox_params=dict(
-                                filter_lost_elements=True,
-                                format='pascal_voc',
-                                label_fields=[
-                                    'gt_bboxes_labels',
-                                    'gt_ignore_flags',
-                                ],
-                                min_visibility=0.0,
-                                type='BboxParams'),
-                            keymap=dict(
-                                gt_bboxes='bboxes',
-                                gt_masks='masks',
-                                img='image'),
-                            skip_img_without_anno=True,
-                            transforms=[
-                                dict(
-                                    always_apply=True,
-                                    height=300,
-                                    type='CenterCrop',
-                                    width=3840),
-                            ],
-                            type='Albu'),
-                    ],
-                    [
-                        dict(
-                            keep_ratio=True,
-                            scales=[
-                                (
-                                    480,
-                                    2048,
-                                ),
-                                (
-                                    512,
-                                    2048,
-                                ),
-                                (
-                                    544,
-                                    2048,
-                                ),
-                                (
-                                    576,
-                                    2048,
-                                ),
-                                (
-                                    608,
-                                    2048,
-                                ),
-                                (
-                                    640,
-                                    2048,
-                                ),
-                                (
-                                    672,
-                                    2048,
-                                ),
-                                (
-                                    704,
-                                    2048,
-                                ),
-                                (
-                                    736,
-                                    2048,
-                                ),
-                                (
-                                    768,
-                                    2048,
-                                ),
-                            ],
-                            type='RandomChoiceResize'),
-                    ],
-                    [
-                        dict(
-                            keep_ratio=True,
-                            scales=[
-                                (
-                                    400,
-                                    4200,
-                                ),
-                                (
-                                    500,
-                                    4200,
-                                ),
-                                (
-                                    600,
-                                    4200,
-                                ),
-                            ],
-                            type='RandomChoiceResize'),
-                        dict(
-                            allow_negative_crop=True,
-                            crop_size=(
-                                384,
-                                600,
-                            ),
-                            crop_type='absolute_range',
-                            type='RandomCrop'),
-                        dict(
-                            keep_ratio=True,
-                            scales=[
-                                (
-                                    480,
-                                    2048,
-                                ),
-                                (
-                                    512,
-                                    2048,
-                                ),
-                                (
-                                    544,
-                                    2048,
-                                ),
-                                (
-                                    576,
-                                    2048,
-                                ),
-                                (
-                                    608,
-                                    2048,
-                                ),
-                                (
-                                    640,
-                                    2048,
-                                ),
-                                (
-                                    672,
-                                    2048,
-                                ),
-                                (
-                                    704,
-                                    2048,
-                                ),
-                                (
-                                    736,
-                                    2048,
-                                ),
-                                (
-                                    768,
-                                    2048,
-                                ),
-                            ],
-                            type='RandomChoiceResize'),
-                    ],
-                ],
-                type='RandomChoice'),
-            dict(type='PackDetInputs'),
-        ],
-        type=dataset_type),
-    num_workers=2,
-    persistent_workers=True,
-    sampler=dict(_scope_='mmdet', shuffle=True, type='DefaultSampler'))
 
 train_pipeline = [
     dict(type='LoadImageFromFile'),
@@ -767,6 +598,14 @@ train_pipeline = [
                             768,
                             2048,
                         ),
+                        (
+                            800,
+                            2048,
+                        ),
+                        (
+                            832,
+                            2048,
+                        )
                     ],
                     type='RandomChoiceResize'),
             ],
@@ -839,6 +678,14 @@ train_pipeline = [
                             768,
                             2048,
                         ),
+                        (
+                            800,
+                            2048,
+                        ),
+                        (
+                            832,
+                            2048,
+                        )
                     ],
                     type='RandomChoiceResize'),
             ],
@@ -846,6 +693,21 @@ train_pipeline = [
         type='RandomChoice'),
     dict(type='PackDetInputs'),
 ]
+
+
+train_dataloader = dict(
+    batch_size=1,
+    dataset=dict(
+        #
+        ann_file='/home/b2b/arthur/data/all_data_coco.json',
+        data_prefix=dict(img='/'),
+        filter_cfg=dict(filter_empty_gt=False, min_size=32),
+        pipeline=train_pipeline,
+        type=dataset_type),
+    num_workers=10,
+    persistent_workers=True,
+    sampler=dict(_scope_='mmdet', shuffle=True, type='DefaultSampler'))
+
 val_cfg = dict(type='ABValLoop')
 
 val_dataloader = test_dataloader
@@ -873,7 +735,7 @@ custom_hooks = [
     dict(type='TSVHook'),
     dict(type="ABEvalHook",
          eval_path="/home/b2b/arthur/git/EvalBin",
-         gt_path="/home/b2b/arthur/data/10_hard_images/gt.tsv",
+         gt_path="/home/b2b/arthur/data/921_hard_images/gt.tsv",
          config_path="/home/b2b/arthur/git/EvalBin/wrappers/wrapper_config.json"),
     dict(type="ABKPIHook"),
     # dict(type="ABClearMLHook",
