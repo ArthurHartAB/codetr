@@ -146,6 +146,8 @@ class CoDETR(BaseDetector):
     def loss(self, batch_inputs: Tensor,
              batch_data_samples: SampleList) -> Union[dict, list]:
         batch_input_shape = batch_data_samples[0].batch_input_shape
+        
+        
         if self.use_lsj:
             for data_samples in batch_data_samples:
                 img_metas = data_samples.metainfo

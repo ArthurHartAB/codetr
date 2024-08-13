@@ -160,6 +160,9 @@ class CocoDataset(BaseDetDataset):
             if ann.get('segmentation', None):
                 instance['mask'] = ann['segmentation']
 
+            if ann.get("loss_weight", False):  # arthur
+                instance['loss_weight'] = ann['loss_weight']
+
             instances.append(instance)
         data_info['instances'] = instances
         return data_info

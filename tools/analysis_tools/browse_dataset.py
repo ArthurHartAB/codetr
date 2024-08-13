@@ -53,7 +53,10 @@ def main():
     visualizer.dataset_meta = dataset.metainfo
 
     progress_bar = ProgressBar(len(dataset))
-    for item in dataset:
+
+    small_dataset = [dataset[1000*i] for i in range(50)] # arthur
+
+    for item in small_dataset:
         img = item['inputs'].permute(1, 2, 0).numpy()
         data_sample = item['data_samples'].numpy()
         gt_instances = data_sample.gt_instances

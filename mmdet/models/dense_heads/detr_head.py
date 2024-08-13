@@ -282,6 +282,24 @@ class DETRHead(BaseModule):
         bbox_targets = torch.cat(bbox_targets_list, 0)
         bbox_weights = torch.cat(bbox_weights_list, 0)
 
+        # --------------------------------------------------------------------
+        # arthur
+        '''loss_weights = []
+        for gt_instance in batch_gt_instances:
+            if hasattr(gt_instance, 'loss_weights'):
+                loss_weights.append(gt_instance.loss_weights)
+            else:
+                # If loss_weights are not provided, assume weights are 1 (no effect)
+                loss_weights.append(torch.ones_like(gt_instance.labels))
+
+        loss_weights = torch.cat(loss_weights, 0)
+
+        # Apply loss weights to label_weights and bbox_weights
+        label_weights = label_weights * loss_weights
+        bbox_weights = bbox_weights * loss_weights'''
+
+        # --------------------------------------------------------------------
+
         # classification loss
         cls_scores = cls_scores.reshape(-1, self.cls_out_channels)
         # construct weighted avg_factor to match with the official DETR repo
@@ -448,6 +466,21 @@ class DETRHead(BaseModule):
         bbox_targets = torch.zeros_like(bbox_pred, dtype=gt_bboxes.dtype)
         bbox_weights = torch.zeros_like(bbox_pred, dtype=gt_bboxes.dtype)
         bbox_weights[pos_inds] = 1.0
+
+        # -------------------------------------------------------------------
+        # arthur
+
+        if hasattr(gt_instances, 'loss_weights'):
+            loss_weights = gt_instances.loss_weights[pos_assigned_gt_inds.long(
+            )]
+            # Apply loss weights to label_weights and bbox_weights
+            label_weights[pos_inds] *= loss_weights
+            bbox_weights[pos_inds] *= loss_weights
+        else:
+            # If loss_weights are not provided, they default to 1, so no change needed
+            pass
+
+        # -------------------------------------------------------------------
 
         # DETR regress the relative position of boxes (cxcywh) in the image.
         # Thus the learning target should be normalized by the image size, also

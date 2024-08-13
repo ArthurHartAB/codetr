@@ -12,6 +12,7 @@ custom_imports = dict(
         'projects.CODETR.loops',
         'projects.CODETR.runners',
         'projects.CODETR.evaluation',
+        'projects.CODETR.transforms'
     ])
 
 dataset_type = 'ABDataset'
@@ -523,7 +524,7 @@ train_cfg = dict(max_epochs=16, type='EpochBasedTrainLoop', val_interval=1)
 
 train_pipeline = [
     dict(type='LoadImageFromFile'),
-    dict(type='LoadAnnotations', with_bbox=True),
+    dict(type='ABLoadAnnotations', with_bbox=True),
     dict(prob=0.5, type='RandomFlip'),
     dict(scale=(
         3840,
@@ -552,7 +553,7 @@ train_pipeline = [
                             type='CenterCrop',
                             width=3840),
                     ],
-                    type='Albu'),
+                    type='ABAlbu'),
             ],
             [
                 dict(
@@ -622,7 +623,7 @@ train_pipeline = [
                         600,
                     ),
                     crop_type='absolute_range',
-                    type='RandomCrop'),
+                    type='ABRandomCrop'),
                 dict(
                     keep_ratio=True,
                     scales=[
@@ -667,7 +668,7 @@ train_pipeline = [
             ],
         ],
         type='RandomChoice'),
-    dict(type='PackDetInputs'),
+    dict(type='ABPackDetInputs'),
 ]
 
 
@@ -675,7 +676,7 @@ train_dataloader = dict(
     batch_size=1,
     dataset=dict(
         #
-        ann_file='/home/b2b/arthur/data/all_data_coco.json',
+        ann_file='/home/b2b/arthur/data/all_data_coco_loss_weight.json',
         data_prefix=dict(img='/'),
         filter_cfg=dict(filter_empty_gt=False, min_size=32),
         pipeline=train_pipeline,
