@@ -12,7 +12,8 @@ custom_imports = dict(
         'projects.CODETR.loops',
         'projects.CODETR.runners',
         'projects.CODETR.evaluation',
-        'projects.CODETR.transforms'
+        'projects.CODETR.transforms',
+        'projects.CODETR.visualizer'
     ])
 
 dataset_type = 'ABDataset'
@@ -701,7 +702,7 @@ vis_backends = [
 visualizer = dict(
     _scope_='mmdet',
     name='visualizer',
-    type='DetLocalVisualizer',
+    type='ABDetLocalVisualizer',
     vis_backends=[
         dict(type='LocalVisBackend'),
         dict(type='TensorboardVisBackend'),

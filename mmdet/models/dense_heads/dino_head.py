@@ -425,16 +425,12 @@ class DINOHead(DeformableDETRHead):
         # ------------------------------------------------
         # arthur
 
-        # Apply loss_weights if they exist
-        if hasattr(gt_instances, 'loss_weights'):
-            loss_weights = gt_instances.loss_weights[pos_assigned_gt_inds.long(
+        if hasattr(gt_instances, 'loss_weight'):
+            loss_weights = gt_instances.loss_weight[pos_assigned_gt_inds.long(
             )]
-            # Apply loss weights to label_weights and bbox_weights
             label_weights[pos_inds] *= loss_weights
-            bbox_weights[pos_inds] *= loss_weights
-        else:
-            # If loss_weights are not provided, they default to 1, so no change needed
-            pass
+            expanded_loss_weights = loss_weights.view(-1, 1).expand(-1, 4)
+            bbox_weights[pos_inds] *= expanded_loss_weights
 
         # -------------------------------------------------
 

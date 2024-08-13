@@ -132,8 +132,6 @@ class ABPackDetInputs(BaseTransform):
         data_sample.set_metainfo(img_meta)
         packed_results['data_samples'] = data_sample
 
-        print("Here")
-
         return packed_results
 
     def __repr__(self) -> str:
