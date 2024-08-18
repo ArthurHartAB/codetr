@@ -1,0 +1,607 @@
+tagged_set_id	tagged_set_name	purpose_od	purpose_dc	num_of_images	image_format	labels	horizon	lowest_point_of_hood	highest_point_of_hood	update_gt_date
+63b538c22426700446cd21b3	official_batch_1_yochen_mfc520_for_train_updated	train	train	257	QUAD	EUROPE, CLEAR, CLOUDY, DAY	950	1675	1585	21/08/2023, 17:23:55
+63b59fad2426700446ce6d3d	official_batch_2_yochen_mfc520_for_train_updated	train	train	307	QUAD	EUROPE, CLEAR, CLOUDY, DAY	950	1675	1585	21/08/2023, 17:23:59
+63b5a0092426700446ce6d9c	official_batch_3_yochen_mfc520_for_train_updated	train	train	521	QUAD	EUROPE, CLEAR, CLOUDY, DAY	950	1675	1585	21/08/2023, 17:24:03
+63b5a0522426700446ce6de7	official_batch_4_yochen_mfc520_for_train_updated	train	train	507	QUAD	EUROPE, CLEAR, DAY	950	1675	1585	21/08/2023, 17:24:06
+63b5a1132426700446ce6ead	official_batch_5_yochen_mfc520_for_train_updated	train	train	1069	QUAD	EUROPE, CLEAR, CLOUDY, DAY	950	1675	1585	21/08/2023, 17:24:10
+63b5a2402426700446ce7002	official_batch_7_yochen_mfc520_for_train_updated	train	train	1205	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:19
+63b5a2a62426700446ce7076	official_batch_8_yochen_mfc520_for_train_updated	train	train	1143	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:22
+63b5a3022426700446ce70e4	official_batch_9_yochen_mfc520_for_train_updated	train	train	978	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:26
+63b5a3472426700446ce713d	official_batch_10_yochen_mfc520_for_train_updated	train	train	646	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:29
+63b5a3a72426700446ce71ad	official_batch_1_kramer_conti_mfc520_day_japan_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:32
+63b5a3fe2426700446ce7224	official_batch_2_kramer_conti_mfc520_day_japan_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:36
+63b5a43b2426700446ce7272	official_batch_3_kramer_conti_mfc520_day_japan_for_train_updated	train	train	500	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:38
+63b5a7332426700446ce7570	official_batch_1_george_conti_mfc520_japan_day_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:42
+63b5a7902426700446ce75e8	official_batch_2_george_conti_mfc520_japan_day_for_train_updated	train	train	998	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:45
+63b5a7fc2426700446ce7671	official_batch_3_george_conti_mfc520_japan_day_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:49
+63b67fba2426700446d0237b	official_batch_4_george_conti_mfc520_japan_day_for_train_updated	train	train	996	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:52
+63b680352426700446d02414	official_batch_5_george_conti_mfc520_japan_day_for_train_updated	train	train	556	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:55
+63b680e12426700446d024e8	official_batch_6_george_conti_mfc520_japan_day_for_train_updated	train	train	1991	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:24:59
+63b6812b2426700446d02559	official_batch_7_george_conti_mfc520_japan_day_for_train_updated	train	train	490	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:02
+63b682442426700446d026a8	official_batch_8_george_conti_mfc520_japan_day_for_train_updated	train	train	998	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:05
+63b682982426700446d02720	official_batch_9_george_conti_mfc520_japan_day_for_train_updated	train	train	1013	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:09
+63b682fd2426700446d027ae	official_batch_10_george_conti_mfc520_japan_day_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:12
+63b683322426700446d02808	official_batch_11_george_conti_mfc520_japan_day_for_train_updated	train	train	467	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:16
+63b683c22426700446d028c8	official_batch_12_george_conti_mfc520_japan_day_for_train_updated	train	train	1483	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:19
+63b684542426700446d0295b	official_batch_13_george_conti_mfc520_japan_day_for_train_updated	train	train	1614	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:23
+63b69c0f2426700446d17be2	official_batch_14_george_conti_mfc520_japan_day_for_train_updated	train	train	2230	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:27
+63b69e162426700446d18094	official_batch_15_george_conti_mfc520_japan_day_for_train_updated	train	train	2012	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:31
+63b69f4d2426700446d1905f	official_batch_16_george_conti_mfc520_japan_day_for_train_updated	train	train	1156	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:34
+63b6a0572426700446d1cd39	official_batch_1_hiroshima_day_fas_issues_for_train_updated	train	train	288	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:37
+63b6a0772426700446d1d407	official_batch_2_hiroshima_day_fas_issues_for_train_updated	train	train	136	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:40
+63b6a0902426700446d1d9a3	official_batch_3_hiroshima_day_fas_issues_for_train_updated	train	train	176	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:43
+63b6a0cd2426700446d1e6dd	official_batch_4_hiroshima_day_fas_issues_for_train_updated	train	train	545	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:46
+63b6a2432426700446d1f156	official_batch_5_hiroshima_day_fas_issues_for_train_updated	train	train	684	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:49
+63b6a29d2426700446d1f1e5	official_batch_6_hiroshima_day_fas_issues_for_train_updated	train	train	713	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:52
+63b6a32a2426700446d1f2a3	official_batch_7_hiroshima_day_fas_issues_for_train_updated	train	train	598	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:55
+63b6a3a32426700446d1f342	official_batch_8_hiroshima_day_fas_issues_for_train_updated	train	train	1336	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:25:59
+63b6a6632426700446d1f73b	official_batch_9_hiroshima_day_fas_issues_for_train_updated	train	train	219	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:02
+63b6a6de2426700446d1f9c9	official_batch_10_hiroshima_day_fas_issues_for_train_updated	train	train	937	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:05
+63b6a70c2426700446d1fa0a	official_batch_11_hiroshima_day_fas_issues_for_train_updated	train	train	442	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:08
+63b6a7642426700446d1fa57	official_batch_1_homer_conti_mfc520_korea_day_for_train_updated	train	train	997	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:12
+63b6a7b52426700446d1fadb	official_batch_2_homer_conti_mfc520_korea_day_for_train_updated	train	train	992	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:15
+63b6a8172426700446d1fb6d	official_batch_3_homer_conti_mfc520_korea_day_for_train_updated	train	train	998	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:18
+63b6a8742426700446d1fbfd	official_batch_4_homer_conti_mfc520_korea_day_for_train_updated	train	train	999	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:22
+63b6a8d82426700446d1fc92	official_batch_5_homer_conti_mfc520_korea_day_for_train_updated	train	train	997	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:25
+63b6a93e2426700446d1fd33	official_batch_6_homer_conti_mfc520_korea_day_for_train_updated	train	train	994	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:28
+63b6aa582426700446d1fe7d	official_construction_cones_batch_1_for_train_updated	train	train	938	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:32
+63b6be492426700446d26ebd	official_batch1_peds_2w_ratio_stabilizer_for_train_updated	train	train	1078	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:48
+63b6bef72426700446d26f9b	official_batch2_peds_2w_ratio_stabilizer_for_train_updated	train	train	1000	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:52
+63b6c0232426700446d270ab	official_batch1_highway_fas_for_train_updated	train	train	1065	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:56
+63b6c0732426700446d27109	official_batch2_highway_fas_for_train_updated	train	train	1050	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:26:59
+63b6c0c72426700446d27172	official_2w_motor_overtaking_trucks_leftovers_for_train_updated	train	train	917	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:02
+63b6c1722426700446d27311	official_overtaking_trucks_batch_2_for_train_updated	train	train	1003	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:06
+63b6c1d02426700446d2745a	official_2w_motor_overtaking_trucks_leftovers_batch_2_for_train_updated	train	train	672	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:10
+63b6c2b52426700446d2772b	official_overtaking_trucks_batch_1_for_train_updated	train	train	2129	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:14
+63b6c7432426700446d2b19a	official_batch1_dummy_train_set_filtered_1_for_train_updated	train	train	245	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:17
+63b6c7c22426700446d2cd1e	official_batch2_vans_for_psa_drives_for_train_updated	train	train	1170	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:21
+63b6c9642426700446d2d08a	official_yellow_vest_batch_1_for_train_updated	train	train	1078	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:25
+63b6c9a82426700446d2d0e1	official_yellow_vest_batch_2_for_train_updated	train	train	567	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:28
+63b6ca042426700446d2d13a	official_renault_continental_test_yellow_vest_for_train_updated	train	train	451	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:31
+63b6ca682426700446d2d195	official_grid_yellow_vest_for_train_updated	train	train	185	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:34
+63b6cc882426700446d2d2a8	official_big_set_2w_rider_for_train_updated	train	train	768	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:37
+63b6cd952426700446d2d3ba	official_big_set_2w_rider_04_for_train_updated	train	train	409	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:48
+63b6cde72426700446d2d416	official_big_set_2w_rider_05_for_train_updated	train	train	746	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:51
+63b6cecc2426700446d2d47e	official_big_set_2w_rider_06_for_train_updated	train	train	1838	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:56
+63b6cf372426700446d2d4df	official_big_set_2w_rider_07_for_train_updated	train	train	829	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:27:59
+63b6cf912426700446d2d53b	official_2w_germany_general_issues_for_train_updated	train	train	277	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:02
+63b6cff92426700446d2d5ad	official_batch1_2w_rider_germany_for_train_updated	train	train	593	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:05
+63b6d0822426700446d2d647	official_batch1_2w_rider_general_issues_for_train_updated	train	train	720	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:09
+63b6d30f2426700446d2d9c7	official_open_road_2w_data_from_july22_germany_workshop_for_train_updated	train	train	318	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:12
+63b6d3442426700446d2da2b	official_open_road_2w_data_from_july22_germany_workshop_batch2_for_train_updated	train	train	383	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:15
+63b6d3672426700446d2da8a	official_open_road_2w_data_from_july_germany_workshop_for_train_updated	train	train	57	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:17
+63b6d3992426700446d2daf6	official_2w_longi_urbanic_for_train_updated	train	train	262	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:20
+63b6d41f2426700446d2dbbc	official_truncated_peds_in_center_from_preliminary_for_train_updated	train	train	378	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:23
+63b6d4cc2426700446d2dc42	official_truncated_valid_set_for_train_updated	train	train	1971	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:28
+63b6d5b12426700446d2dcd8	official_fas_random_23_set_for_train_updated	train	train	1116	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:32
+63b6d6af2426700446d2dd73	official_fas_peds_part_2_for_train_updated	train	train	737	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:36
+63b6d71e2426700446d2de11	official_fas_peds_datasets_tagged_for_train_updated	train	train	947	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:39
+63b6d7e02426700446d2e37e	official_strange_trucks_dataset_for_train_updated	train	train	2130	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:44
+63b6d8902426700446d2e768	official_4w_india_set_batch1_for_train_updated	train	train	1801	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:49
+63b6d9152426700446d2ec6b	official_4w_india_set_batch2_for_train_updated	train	train	1300	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:53
+63b6e1922426700446d318b6	official_2w_longi_sanity_data_from_july_germany_workshop_for_train_updated	train	train	1003	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:28:57
+63b6e3032426700446d31f75	official_additional_sanity2w_data_for_train_updated	train	train	3950	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:04
+63b6e3c52426700446d3278e	official_bike_and_dummy_data_for_train_updated	train	train	2014	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:08
+63b6e43e2426700446d32818	official_medium_prior_day_longitudinal_motorbike_and_bicycle_with_vest_for_train_updated	train	train	1025	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:12
+63b6e5162426700446d32d64	official_medium_prior_day_crossing_bicycle_no_vest_new2_for_train_updated	train	train	2260	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:17
+63b6e60b2426700446d334e5	official_medium_prior_crossing_motorbike_with_vest_for_train_updated	train	train	2220	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:22
+63b6e6582426700446d33c15	official_2w_city_for_train_updated	train	train	40	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:25
+63b6eb0a2426700446d34dd9	official_bike_set_2_for_train_updated	train	train	104	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:28
+63b6eb4c2426700446d34e48	official_bike_yellow_longi_range50m_for_train_updated	train	train	92	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:31
+63b6ec312426700446d34ec9	official_additional_sanity_2w_longi_from_train_data_for_train_updated	train	train	1766	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:35
+63b6ec442426700446d34f36	official_sanity_2w_longi_from_germany_data_for_train_updated	train	train	117	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:38
+63b6ec782426700446d34fa2	official_sanity_2w_longi_small_batch2_for_train_updated	train	train	340	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:41
+63b6ec9d2426700446d35011	official_sanity_2w_longi_small_batch_for_train_updated	train	train	345	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:44
+63b6ed452426700446d3513e	official_unify_2w_crossing_moved_from_test_for_train_updated	train	train	1236	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:48
+63b6ef1d2426700446d35ba0	official_unify_sanity_2w_longi_from_the_similar_old_test_sets_for_train_updated	train	train	5725	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:29:57
+63b6ef9b2426700446d36105	official_rnm_open_road_for_train_updated	train	train	30	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:00
+63b6efba2426700446d36176	official_crossing_black_car_40m_70m_45m_for_train_updated	train	train	143	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:03
+63b6f0242426700446d362d2	official_crossing_black_car_40m_70m_60m_for_train_updated	train	train	315	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:13
+63b6f0482426700446d365c0	official_crossing_black_car_40m_70m_65m_for_train_updated	train	train	344	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:16
+63b6f0732426700446d368ac	official_crossing_black_car_40m_70m_70m_for_train_updated	train	train	503	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:19
+63b6f19c2426700446d36bb1	official_ncap_2w_longi_for_train_updated	train	train	2336	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:24
+63b6f1c22426700446d36c32	official_set_1_cpnc_week_19_for_train_updated	train	train	131	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:27
+63b6f1df2426700446d36cab	official_cpnc_n_close_loop_crossing1_for_train_updated	train	train	59	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:30
+63b6f2912426700446d36d31	official_ncap_2w_longi_close_loop_1_for_train_updated	train	train	145	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:33
+63b6f3092426700446d37034	official_longi_2w_ncap_dataset_for_train_updated	train	train	179	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:36
+63b6f3ee2426700446d37821	official_dummy_longi_data_2st_batch_for_train_updated	train	train	2668	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:41
+63b6f46c2426700446d37d9b	official_dummy_longi_data_1st_batch_for_train_updated	train	train	374	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:45
+63b6f4ac2426700446d38090	official_set_2_cpnc_week_19_for_train_updated	train	train	586	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:49
+63ba77e22426700446d42e25	official_ped_yellow_standstill_movingcar_30_for_train_updated	train	train	68	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:52
+63ba77f42426700446d42ea4	official_longitudinal_ped_0m_male_with_yellow_vest1_for_train_updated	train	train	193	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:56
+63ba78142426700446d42f24	official_longitudinal_ped_0m_male_for_train_updated	train	train	364	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:30:59
+63ba78b52426700446d42fa6	official_ped_crossing_yellow_0m_20m_for_train_updated	train	train	2248	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:05
+63ba795b2426700446d43031	official_ped_yellow_10m_50m_occlusion_01_for_train_updated	train	train	2048	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:10
+63ba79852426700446d430bf	official_crossing_ped_with_yellow_vest_5_15m_for_train_updated	train	train	456	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:14
+63ba79a32426700446d4314b	official_crossing_ped_30m_with_vest_set_for_train_updated	train	train	279	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:17
+63ba79c92426700446d431d1	official_crossing_ped_15m_with_vest_images_for_train_updated	train	train	340	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:21
+63ba79d82426700446d43256	official_ped_yellow_10m_50m_for_train_updated	train	train	110	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:24
+63ba79e72426700446d432dc	official_crossing_ped_with_vest_10_30m_for_train_updated	train	train	119	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:27
+63ba7afa2426700446d4337b	official_ped_90_degree_15m_35m_withoutvest_for_train_updated	train	train	2573	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:33
+63ba7bbe2426700446d43410	official_ped_longi_yellow_range50m_for_train_updated	train	train	2213	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:38
+63ba7c262426700446d4349b	official_ped_longi_black_range50m_for_train_updated	train	train	1177	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:43
+63ba7c902426700446d43529	official_walking_ped_90__degree_0_10m_for_train_updated	train	train	1117	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:47
+63ba7caa2426700446d435be	official_ped_crossing_0_10m_for_train_updated	train	train	52	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:50
+63ba7cd82426700446d4364d	official_peds_35_50m_without_vest_the_rest_for_train_updated	train	train	363	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:54
+63ba7d032426700446d436dc	official_crossing_ped_35m_50m_yellow_vest_for_train_updated	train	train	454	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:31:57
+63ba7d2f2426700446d4376b	official_peds_35_50m_without_vest_for_train_updated	train	train	439	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:01
+63ba7d3d2426700446d437fa	official_longitudinal_ped_0m_80m_for_train_updated	train	train	105	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:04
+63ba7d692426700446d4388a	official_ped_on_grass_02_for_train_updated	train	train	458	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:07
+63ba7d832426700446d4391b	official_medium_prior_random_ped_trees_for_train_updated	train	train	223	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:10
+63ba7dae2426700446d439ae	official_ped_on_grass_for_train_updated	train	train	419	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:14
+63ba7deb2426700446d43a41	official_gravel_ped_data_for_train_updated	train	train	612	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:18
+63ba7e2a2426700446d43ad7	official_medium_prior_random_ped_snow_1_for_train_updated	train	train	627	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:21
+63ba81a92426700446d472ee	official_sanity_night_random_peds_dataset_02_06_for_train_updated	train	train	81	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:24
+63ba81d32426700446d47c52	official_sanity_night_2w_dataset_02_06_for_train_updated	train	train	55	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:27
+63ba82ca2426700446d48e59	official_sanity_night_peds_longi_with_vest__for_train_updated	train	train	153	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:30
+63ba82ff2426700446d48ef3	official_night_sanity_peds_data_randomly_moving_for_train_updated	train	train	416	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:34
+63ba832f2426700446d494e4	official_sanity_2w_mostly_crossing_and_random_cycling_data_for_train_updated	train	train	478	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:37
+63ba834f2426700446d49c21	official_night_longitudinal_ped_no_vest_train_for_train_updated	train	train	337	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:40
+63ba84382426700446d4a3a9	official_night_static_ped_longitudinal_car_for_train_updated	train	train	3977	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:48
+63ba85172426700446d4a44c	official_night_car_crossing_black_passat_for_train_updated	train	train	162	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:51
+63ba855e2426700446d4a4ec	official_ncap_cpla_night_08_11_22_filtered_for_train_updated	train	train	480	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:32:55
+63ba86502426700446d4af44	official_ncap_cpla_set_night_08_11_22_for_train_updated	train	train	4312	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:03
+63ba978a2426700446d4dbba	official_ncap_night_2w_for_train_updated	train	train	120	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:06
+63bab4b32426700446d4e33e	official_ncap_night_for_train_updated	train	train	480	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:09
+63bab5642426700446d4e4ba	official_cpfa_night_set_for_train_updated	train	train	103	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:12
+63bab6022426700446d4e5e0	official_cpnc_night_set_for_train_updated	train	train	581	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:16
+63bab9472426700446d4e786	official_night_dataset_2w_and_peds_15_12_22_for_train_updated	train	train	177	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:19
+63bab9a72426700446d4e83a	official_night_dataset_open_road_and_urban_14_11_22_for_train_updated	train	train	463	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:33:23
+63bac0182426700446d4ed26	official_night_issues05_for_train_updated	train	train	598	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:34:25
+63bac04a2426700446d4edd8	official_night_issues04_for_train_updated	train	train	508	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:34:28
+63bac5152426700446d4eea9	official_night_issues03_for_train_updated	train	train	203	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:34:32
+63bac79d2426700446d55a13	official_batch3_night_set_for_train_updated	train	train	1038	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 17:35:02
+64e3738b7225d01c8be18b11	official_batch_6_yochen_mfc520_for_train_updated_tagged_images	train	train	1137	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:26:58
+63b6efed2426700446d361e9	official_crossing_black_car_40m_70m_50m_for_train_updated	train	train	149	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:31:09
+64e386c97225d01c8be18b89	official_combined_night_urban_and_highway_for_train_updated_added_to_official_super_set_od_train_quad	train	train	39	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:32:00
+63babe8a2426700446d4eb9d	official_combined_night_vans_to_prepare_for_train_updated	train	train	203	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:32:21
+63bac5e92426700446d50ab8	official_batch_2_april21_for_train_updated	train	train	1005	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:32:33
+64e386517225d01c8be18b87	official_crossing_black_car_40m_70m_55m_for_train_updated_added_to_official_super_set_od_train_quad	train	train	1	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:44:20
+63bac9422426700446d59e00	official_batch_1_pokemon_mfc520_night_images_for_train_updated	train	train	1941	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:53:21
+63badaee2426700446d5bbee	official_urbanic_country_night_for_train_updated	train	train	608	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:53:52
+63badb162426700446d5c011	official_night_dataset_for_train_updated	train	train	345	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:53:56
+642ad73abe8ede2209d087bf	official_drab_lynn_for_train_updated	train	train	7240	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:09
+642d3098be8ede2209d0937b	official_ncap_4w_for_train_updated	train	train	41	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:12
+642d3218be8ede2209d09387	official_data_for_4w_training_classifier_for_train_updated	train	train	553	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:15
+642d32bdbe8ede2209d0938e	official_night_van_as_car_tagging_problems_for_train_updated	train	train	352	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:19
+64dc92277225d01c8be1612f	official_filtered_ncap_1912_for_train_updated	train	train	120	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:22
+64dc91ff7225d01c8be1612b	official_grid_yellow_vest_02_for_train_updated	train	train	198	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:26
+64dc91b17225d01c8be16121	official_racam_batch3a_rig3_50s_part1_for_train_updated	train	train	3264	QUAD	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 18:54:33
+63f36213be8ede2209ce1cdc	amba4_germany_for_train	train	train	127	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:05:36
+62f5099907d51f1227acd677	sanity_ped_cross_10m_combined_v1_new	train	train	920	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:05:50
+62fa39b107d51f1227c834a8	sanity_ped_cross_05m_combined_v1_new	train	train	959	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:05:59
+62bd99c7ebb0ff6db821686e	youtube_beverly_hills_day_train	train	train	465	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:06:40
+62f8c71307d51f1227bd7aff	sanity_ped_cross_70m_combined_v1_new	train	train	2307	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:06:52
+62f8aa4707d51f1227bd3935	sanity_ped_cross_60m_combined_v1_new1	train	train	1713	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:06:56
+62bc56ebebb0ff6db81659b9	train_wallmart_pedestrian1	train	train	240	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:06:58
+62fdefd16cf28d7159d430c2	sanity_ped_cross_80m_combined_v1_new	train	train	1818	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:07:13
+62fb92296cf28d7159cd3322	sanity_ped_cross_20m_combined_v1_new	train	train	781	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:07:36
+62f8d8ce07d51f1227bda0d2	sanity_ped_cross_30m_combined_v1_new	train	train	1008	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:07:47
+62fbafb16cf28d7159cd8b6f	sanity_ped_cross_50m_combined_v1_new	train	train	1278	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:07:51
+62fa2cb107d51f1227c7eef0	sanity_ped_cross_40m_combined_v1_new	train	train	1141	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown	950	1675	1585	21/08/2023, 19:07:54
+64aea490628d0605eb59f752	official_night_europe_dataset_for_test_tagged_12_07_2023	test	test	568	8MP_JPG	europe, Night	950	1675	1585	21/08/2023, 19:10:53
+63a15d862426700446052eb3	ab_car_validation_germany	test	validation	4441	AMBARELLA_3840_1920	europe, Day	950	1675	1585	22/08/2023, 15:50:09
+630f4dc56f140808cc7ba036	amba_germany_10_validation_set	test	validation	4317	AMBARELLA_3840_1920	europe, Day	950	1675	1585	22/08/2023, 15:50:16
+63c0251f2426700446e07928	ab_car_merging_two_night_sets_validation	test	validation	2037	AMBARELLA_3840_1920	europe, Night	950	1675	1585	22/08/2023, 15:50:21
+649ad51d628d0605eb59918f	ncap_ccrs_day_usa_for_test_27_06_23	test	test	1077	8MP_JPG	usa, Day	950	1675	1585	22/08/2023, 15:51:14
+64ac084b628d0605eb59eb39	official_od_usa_night_urban_and_highway_for_test_10_07_23_for_test_tagged	test	test	1170	8MP_JPG	usa, Night	950	1675	1585	22/08/2023, 15:51:18
+64ac0db3628d0605eb59eb83	official_combined_ncap_dummy_car_skipped_every_10_img_for_test_tagged	test	undefined	1195	8MP_JPG	usa, Day	950	1675	1585	22/08/2023, 15:51:22
+64ae9c39628d0605eb59f6c3	official_night_dataset_from_israel_for_test_tagged_12_07_23	test	undefined	909	8MP_JPG	israel, Night	950	1675	1585	22/08/2023, 15:51:25
+649984f9628d0605eb597e69	lv_colorado_arizona_usa_for_test_26_06_23	test	test	735	8MP_JPG	usa, Day	950	1675	1585	22/08/2023, 15:51:29
+64a5289d628d0605eb59d44f	official_buses_from_tel_aviv_for_test_tagged_05_07_23	test	test	882	8MP_JPG	israel, Day	950	1675	1585	22/08/2023, 15:53:26
+64e4afc77225d01c8be1958f	buses_and_trucks_dataset_from_israel_for_test_22_06_23_tagged	test	test	257	8MP_JPG	israel, Day	950	1675	1585	22/08/2023, 15:53:30
+64b91f8d628d0605eb5a2707	sun_in_frame_dataset_for_test_tagged_19_07_2023	test	test	367	8MP_JPG	europe, Day	950	1675	1585	22/08/2023, 15:53:33
+64b694f4628d0605eb5a1a24	14062023_holon_rehovot_rishon_for_test_tagged_18_07_23	test	test	481	8MP_JPG	israel, Day	950	1675	1585	22/08/2023, 15:53:36
+64bfd085628d0605eb5a4c31	night_datasets_from_europe_for_test_tagged_25_07_2023	test	undefined	1456	8MP_JPG	europe, Night	950	1675	1585	22/08/2023, 15:55:38
+64de15557225d01c8be16b8e	night_dataset_from_usa_ford_for_test_17_08_23	test	test	2006	8MP_JPG	usa, Night	950	1675	1585	22/08/2023, 15:55:43
+64e4b0507225d01c8be1959b	dataset_tel_aviv_2w_and_peds_for_test_27_06_23_tagged	test	test	11	8MP_JPG	israel, day	950	1675	1585	22/08/2023, 16:02:02
+644fb538be8ede2209d138f8	664327133be8ede2209d0987a_filtered_by_hash_17_04_without_duplicates_for_test_tagged	test	test	127	AMBARELLA_3840_1920	israel, day	950	1675	1585	22/08/2023, 16:02:05
+62b01af7ebb0ff6db8c4c77c	10062022_openroad_frankfurt_urban_part1_combined_v1	test	undefined	8800	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, u n d e f i n e d u n d e f i n e d	950	1675	1585	22/08/2023, 16:02:14
+6395a38824267004467cdcf1	germany_urban_validation_170	test	validation	776	AMBARELLA_3840_1920	germany, day, urban	950	1675	1585	22/08/2023, 16:02:20
+6395a57f24267004467d0615	amba2_urban_germany_cloudy_dusk_validation	test	validation	311	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:02:23
+63049b546f140808cc5efd3a	amba3_aeb_15_day_003_validation	test	validation	1533	AMBARELLA_3840_1920	ncap, day, dummy_car	950	1675	1585	22/08/2023, 16:02:26
+63425e005378b16a978637f6	validation_stuttgart_urban	test	validation	1789	AMBARELLA_3840_1920	germany, stuttgart, urban, cloudy, clear, day	950	1675	1585	22/08/2023, 16:02:30
+63c7ef5c24267004460ae836	dawn_country_cloudy_validation_dusk_realistic_chapel_hill	test	undefined	349	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:02:39
+63c7ef3a24267004460ae5be	dawn_highway_cloudy_validation_dusk_realistic_chapel_hill	test	undefined	188	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:02:42
+63c7f83524267004460b6066	country_part_1_validation_ab_car_germany_day_v1_	test	undefined	25	AMBARELLA_3840_1920	germany, day, country	950	1675	1585	22/08/2023, 16:02:45
+63c7f86424267004460b60ea	country_part_2_validation_ab_car_germany_day_v1_	test	undefined	59	AMBARELLA_3840_1920	germany, day, country	950	1675	1585	22/08/2023, 16:02:48
+63c7f7fb24267004460b5d94	highway_validation_ab_car_germany_day_v1_	test	undefined	163	AMBARELLA_3840_1920	germany, day, clear, highway	950	1675	1585	22/08/2023, 16:02:51
+63c7f79624267004460b5c84	urban_validation_ab_car_germany_day_v1_	test	undefined	558	AMBARELLA_3840_1920	germany, day, clear, urban	950	1675	1585	22/08/2023, 16:02:54
+64244b76be8ede2209d05e38	ab001_erh_7799_20230202_110406_wolfsburg_long_demo_route_ssd3_filter_test_for_test_tagged	test	test	50	8MP_JPG	direct_sun, cloudy, wolfsburg, germany	950	1675	1585	22/08/2023, 16:03:04
+642935b5be8ede2209d07852	renault_fas_after_crops_after_tagging_without_duplicates_for_validation_tagged	test	validation	162	8MP_JPG	france, twilight, cloudy, urban	950	1675	1585	22/08/2023, 16:03:07
+6429863dbe8ede2209d07c7e	rain_dataset_filtered2_without_duplicates_1_for_test_tagged	test	test	114	8MP_JPG	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:10
+64802f86be8ede2209d280cb	usa_country_dataset_for_test_07_06_23	test	test	161	8MP_JPG	usa, day, country, clear	950	1675	1585	22/08/2023, 16:03:13
+62f3681707d51f1227a6477e	04082022_ped_crossing_dist_2m_1of3_combined_v1_new	test	validation	1009	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:19
+62f3704907d51f1227a66b2f	04082022_ped_crossing_dist_5m_1of3_new	test	validation	1495	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:23
+63c807af24267004460bcf39	04082022_ped_crossing_dist_10m_1of3_combined_v1_new_18_01_23	test	undefined	1768	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:26
+62f3690307d51f1227a6505a	04082022_ped_crossing_dist_20m_1of2_combined_v1_new	test	validation	2878	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:31
+62f39d8307d51f1227a713dc	04082022_ped_crossing_dist_30m_2of2_new	test	validation	3337	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:35
+62f3722407d51f1227a678c3	04082022_ped_crossing_dist_40m_2of2_new	test	validation	4123	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:40
+62f37e1907d51f1227a6a326	04082022_ped_crossing_dist_50m_2of2_new	test	validation	5101	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:45
+62f3989007d51f1227a6e2af	04082022_ped_crossing_dist_60m_2of2_combined_v1_new	test	validation	5711	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:03:52
+63c8082a24267004460bd22a	04082022_longitudinal_ped_offset_0m_part1_combined_v1_new_18_01_23	test	undefined	5908	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, u n d e f i n e d	950	1675	1585	22/08/2023, 16:03:58
+638477005378b16a9709c878	04082022_car2car_longitudinal_20kph_1of2_combined_v1_1	test	validation	2848	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:03
+63c808f324267004460bd6b5	04082022_car2car_longitudinal_40kph_1of2_combined_v1_1_new_18_01_23	test	undefined	1673	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:07
+6384814e5378b16a970a13e9	04082022_car2car_longitudinal_60kph_1of2_combined_v1_1	test	validation	1228	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:10
+638482635378b16a970a1da4	04082022_car2car_longitudinal_80kph_1of2_combined_v1_1	test	validation	1091	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:14
+63c8095424267004460bd8d0	03082022_bicycle_lat_2m_lr_rl_1of2_combined_v1_new_18_01_23	test	undefined	566	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:17
+63c8096924267004460bd93e	003082022_bicycle_lat_10m_lr_rl_1of2_combined_v1_new_18_01_23	test	undefined	751	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:20
+63c8099624267004460bda15	03082022_bicycle_lat_20m_lr_rl_1of2_combined_v1_new_18_01_23	test	undefined	1034	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:24
+63c80a1724267004460be3d4	03082022_bicycle_lat_40m_lr_rl_1of2_combined_v1_1_18_01_23	test	undefined	1631	AMBARELLA_3840_1920	unknown, unknown, unknown, unknown, 	950	1675	1585	22/08/2023, 16:04:28
+64e4b75f7225d01c8be19600	europe_open_road_diversity_dataset_for_test_26_06_2023_added_to_official_super_set_od_test_8mp	test	test	1399	8MP_JPG	germany, day, direct_sun, clear	950	1675	1585	22/08/2023, 16:26:59
+64e3741d7225d01c8be18b12	official_racam_batch3a_rig3_50s_part2_for_train_updated_tagged_images	train	train	2823	QUAD	unknown, unknown, unknown, unknown, 	950	1675	1585	23/08/2023, 15:29:11
+64e374ef7225d01c8be18b1a	official_crossing_black_car_40m_70m_55m_for_train_updated_tagged_images	train	train	157	QUAD	unknown, unknown, unknown, unknown, 	950	1675	1585	23/08/2023, 15:29:11
+64e375fe7225d01c8be18b25	official_batch_1_rider_for_train_updated_tagged_images	train	train	1798	QUAD	unknown, unknown, unknown, unknown, 	950	1675	1585	23/08/2023, 15:29:11
+64e3869f7225d01c8be18b88	official_combined_night_urban_and_highway_2_for_train_updated_added_to_official_super_set_od_train_quad	train	train	1067	QUAD	unknown, unknown, unknown, unknown, 	950	1675	1585	23/08/2023, 15:29:11
+64e75f557225d01c8be1a729	official_od_acordion_buses_for_train_21_08_23_for_test_tagged	test	test	50	8MP_JPG	day, clear, tel_aviv, israel, urban, accordion_bus	950	1675	1585	24/08/2023, 16:47:43
+64e766607225d01c8be1a79f	official_od_special_trucks_focused_on_cement_mixer_and_24_08_2023_for_test_tagged	test	test	3089	8MP_JPG	day, clear, israel, special_trucks, cement_mixer	950	1675	1585	24/08/2023, 17:27:21
+6522d6d554107825f76a3a46	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_8_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	demo, germany, issues, night, v2, wolfsburg	950	1675	1585	08/10/2023, 19:20:59
+6522d81b54107825f76a3a53	official_od_od_issues_by_videos_filtering_night_wolfsburg_demo_0_1_batch_7_split_by_size_of_116_od_for_train_tagged_added_to_official_super_set_od_train_8mp	train	train	115	8MP_JPG	demo, germany, night, train, wolfsburg	950	1675	1585	08/10/2023, 19:26:06
+6522d83f54107825f76a3a55	official_od_od_issues_by_videos_filtering_night_wolfsburg_demo_0_1_batch_6_split_by_size_of_116_od_for_train_tagged_added_to_official_super_set_od_train_8mp	train	train	115	8MP_JPG	demo, germany, night, train, wolfsburg	950	1675	1585	08/10/2023, 19:26:41
+6522d84954107825f76a3a56	official_od_od_issues_by_videos_filtering_night_wolfsburg_demo_0_1_batch_5_split_by_size_of_116_od_for_train_tagged	train	train	116	8MP_JPG	demo, germany, night, train, wolfsburg	950	1675	1585	08/10/2023, 19:27:12
+6526a79f54107825f76a4c70	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_30_split_by_size_of_200_od_for_train_tagged	train	train	83	8MP_JPG	demo, germany, night, random, v2, wolfsburg	-1	-1	-1	11/10/2023, 16:49:09
+6526aa2554107825f76a4c78	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_18_split_by_size_of_200_od_for_train_tagged	train	train	189	8MP_JPG	demo, germany, night, random, v2, wolfsburg	-1	-1	-1	11/10/2023, 17:01:11
+6526acb454107825f76a4c90	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_12_split_by_size_of_200_od_for_train_tagged	train	train	60	8MP_JPG	demo, germany, night, random, v2, wolfsburg	-1	-1	-1	11/10/2023, 17:12:04
+6526b6b354107825f76a4d23	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_11_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	demo, germany, issues, night, v2, wolfsburg	-1	-1	-1	11/10/2023, 17:55:42
+6526b7ae54107825f76a4d2e	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_10_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	demo, germany, issues, night, v2, wolfsburg	-1	-1	-1	11/10/2023, 17:59:55
+6527c4fb54107825f76a5056	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_10_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	12/10/2023, 13:06:08
+6527c60d54107825f76a505e	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_3_split_by_size_of_100_od_for_train_tagged	train	train	84	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	12/10/2023, 13:10:41
+6527c63454107825f76a505f	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_2_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	12/10/2023, 13:11:19
+6527c65b54107825f76a5060	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_1_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	12/10/2023, 13:12:00
+6527c68354107825f76a5061	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_0_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	12/10/2023, 13:12:39
+653507a654107825f76b9879	official_od_disappointing_palm_springs_skip_10_od_for_test_tagged	test	test	88	8MP_JPG	/PRE_DAG_UPLOUDS/IL_AB/2023_08_23/2023_08_23_22_39_06/2023_08_23_22_39_06, day, highway, israel, night, urban	-1	-1	-1	22/10/2023, 14:29:46
+654ccf4c54107825f7758267	_combined_night_recs_for_od_test_batch_9_split_by_size_of_294_for_test_od_tagged	test	test	240	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:23:42
+654ccf5254107825f7758b06	_combined_night_recs_for_od_test_batch_8_split_by_size_of_294_for_test_od_tagged	test	test	284	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:23:48
+654ccf5854107825f775914c	_combined_night_recs_for_od_test_batch_7_split_by_size_of_294_for_test_od_tagged	test	test	271	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:23:54
+654ccf5e54107825f77598d9	_combined_night_recs_for_od_test_batch_6_split_by_size_of_294_for_test_od_tagged	test	test	290	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:00
+654ccf6554107825f775a08d	_combined_night_recs_for_od_test_batch_5_split_by_size_of_294_for_test_od_tagged	test	test	292	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:07
+654ccf6b54107825f775ab91	_combined_night_recs_for_od_test_batch_4_split_by_size_of_294_for_test_od_tagged	test	test	294	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:13
+654ccf7154107825f775bb00	_combined_night_recs_for_od_test_batch_3_split_by_size_of_294_for_test_od_tagged	test	test	222	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:19
+654ccf7854107825f775c7de	_combined_night_recs_for_od_test_batch_2_split_by_size_of_294_for_test_od_tagged	test	test	280	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:26
+654ccf7e54107825f775d2c2	_combined_night_recs_for_od_test_batch_1_split_by_size_of_294_for_test_od_tagged	test	test	263	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:32
+654ccf8554107825f775e146	_combined_night_recs_for_od_test_batch_0_split_by_size_of_294_for_test_od_tagged	test	test	246	8MP_JPG	europe, germany, night, test	-1	-1	-1	09/11/2023, 14:24:39
+654ccee954107825f77576b0	_2023_07_29_23_32_38_bonlanden_vaihingen_rain_night_1_fps_for_test_batch_4_split_by_size_of_200_tagged	test	test	5	8MP_JPG	2023_07_29_23_32_38_bonlanden_vaihingen_rain_night, highway, munich, night, rain, test	-1	-1	-1	09/11/2023, 15:26:44
+654cceef54107825f7757886	_2023_07_29_23_32_38_bonlanden_vaihingen_rain_night_1_fps_for_test_batch_3_split_by_size_of_200_tagged	test	test	200	8MP_JPG	2023_07_29_23_32_38_bonlanden_vaihingen_rain_night, highway, munich, night, rain, test	-1	-1	-1	09/11/2023, 15:26:59
+654cde6054107825f7768ab2	_2023_07_29_23_32_38_bonlanden_vaihingen_rain_night_1_fps_for_test_batch_1_split_by_size_of_200_tagged	test	test	200	8MP_JPG	2023_07_29_23_32_38_bonlanden_vaihingen_rain_night, highway, munich, night, rain, test	-1	-1	-1	09/11/2023, 15:28:02
+63b6ab412426700446d1ffc8	official_batch_1_fp_from_conti_for_train_updated	train	train	1772	QUAD	2w, day, cloudy	-1	-1	-1	27/11/2023, 10:25:43
+6564534e54107825f77c5c67	official_od_on_sr_data_01_peds_2w_filtered_for_train_updated	train	train	829	QUAD	2w, day, cloudy	-1	-1	-1	27/11/2023, 10:29:07
+63b6cd502426700446d2d367	official_big_set_2w_rider_03_for_train_updated	train	train	719	QUAD	2w, day, cloudy	-1	-1	-1	27/11/2023, 10:29:14
+63b6cd092426700446d2d30b	official_big_set_2w_rider_02_for_train_updated	train	train	1208	QUAD	2w, day, cloudy	-1	-1	-1	27/11/2023, 10:29:19
+6565f3b3fa38f84eb4f861b5	_collected_night_random_from_wolfsburg_demo_v2_batch_25_split_by_size_of_200_for_train_od_tagged	train	train	191	8MP_JPG	demo, germany, night, random, v2, wolfsburg	-1	-1	-1	28/11/2023, 16:05:44
+6565f3d6fa38f84eb4f872c5	_collected_night_random_from_wolfsburg_demo_v2_batch_2_split_by_size_of_200_for_train_od_tagged	train	train	147	8MP_JPG	demo, germany, night, random, v2, wolfsburg	-1	-1	-1	28/11/2023, 16:06:18
+6565f45bfa38f84eb4f87b89	_hideous_visalia_for_train_od_skip_30_tagged	train	train	60	8MP_JPG	/PRE_DAG_UPLOUDS/IL_AB/2023_08_23/2023_08_23_22_39_06/2023_08_23_22_39_06, day, highway, israel, night, urban	-1	-1	-1	28/11/2023, 16:08:30
+656846edfa38f84eb4fe0070	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__19_tagged	test	test	537	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:25:22
+65684710fa38f84eb4fe7734	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__16_tagged	test	test	549	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:25:56
+6568471afa38f84eb4fe9cae	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__15_tagged	test	test	494	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:26:07
+65684726fa38f84eb4feb668	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__14_tagged	test	test	539	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:26:18
+65684731fa38f84eb4fedd03	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__13_tagged	test	test	550	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:26:29
+6568473cfa38f84eb4feff56	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__12_tagged	test	test	544	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:26:40
+65684745fa38f84eb4ff1324	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__11_tagged	test	test	404	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:26:49
+6568474ffa38f84eb4ff297c	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__10_tagged	test	test	541	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:27:00
+6568475afa38f84eb4ff46da	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__9_tagged	test	test	550	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:27:10
+65684764fa38f84eb4ff65d2	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__8_tagged	test	test	550	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:27:20
+6568476efa38f84eb4ff79ad	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__7_tagged	test	test	550	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:27:30
+65684779fa38f84eb4ff999e	_combined_test_set_from_europe_and_israel_highway_and_urban_batch__6_tagged	test	test	550	8MP_JPG	mix, sequential	-1	-1	-1	30/11/2023, 10:27:41
+65684fc9fa38f84eb4ff9f47	_night_highway_france_test_for_test_od_tagged	test	test	238	8MP_JPG	france, highway, night, test	-1	-1	-1	30/11/2023, 11:03:09
+65684fd1fa38f84eb4ffa193	_od_night_highway_germany_test_for_test_od_tagged	test	test	181	8MP_JPG	germany, highway, night, test	-1	-1	-1	30/11/2023, 11:03:15
+65684fd6fa38f84eb4ffa323	_od_night_urban_germany_test_batch_3_split_by_size_of_250_for_test_od_tagged	test	test	69	8MP_JPG	germany, night, test, urban	-1	-1	-1	30/11/2023, 11:03:21
+65684fddfa38f84eb4ffab66	_od_night_urban_germany_test_batch_2_split_by_size_of_250_for_test_od_tagged	test	test	246	8MP_JPG	germany, night, test, urban	-1	-1	-1	30/11/2023, 11:03:29
+65684fe6fa38f84eb4ffb30f	_od_night_urban_germany_test_batch_1_split_by_size_of_250_for_test_od_tagged	test	test	195	8MP_JPG	germany, night, test, urban	-1	-1	-1	30/11/2023, 11:03:37
+65684fedfa38f84eb4ffb918	_od_night_urban_germany_test_batch_0_split_by_size_of_250_for_test_od_tagged	test	test	218	8MP_JPG	germany, night, test, urban	-1	-1	-1	30/11/2023, 11:03:44
+65687568fa38f84eb4ffe34f	_heavy_rain_day_stuttgart_leonberg_test_batch_6_split_by_size_of_250_for_test_od_tagged	test	test	89	8MP_JPG	day, germany, heavy_rain, leonberg, rain, stuttgart	-1	-1	-1	30/11/2023, 13:43:39
+65687570fa38f84eb4ffeceb	_heavy_rain_day_stuttgart_leonberg_test_batch_4_split_by_size_of_250_for_test_od_tagged	test	test	249	8MP_JPG	day, germany, heavy_rain, leonberg, rain, stuttgart	-1	-1	-1	30/11/2023, 13:43:47
+65687579fa38f84eb4fffc49	_heavy_rain_day_stuttgart_leonberg_test_batch_3_split_by_size_of_250_for_test_od_tagged	test	test	249	8MP_JPG	day, germany, heavy_rain, leonberg, rain, stuttgart	-1	-1	-1	30/11/2023, 13:43:55
+65687581fa38f84eb40008a8	_heavy_rain_day_stuttgart_leonberg_test_batch_2_split_by_size_of_250_for_test_od_tagged	test	test	247	8MP_JPG	day, germany, heavy_rain, leonberg, rain, stuttgart	-1	-1	-1	30/11/2023, 13:44:04
+6568758afa38f84eb40019a8	_heavy_rain_day_stuttgart_leonberg_test_batch_1_split_by_size_of_250_for_test_od_tagged	test	test	250	8MP_JPG	day, germany, heavy_rain, leonberg, rain, stuttgart	-1	-1	-1	30/11/2023, 13:44:14
+659aaa9ad8ef2d6f5c4ec3f3	europe_usa_uniuqe_vehicles_for_test_added_to_official_super_set_od_test_8mp	test	test	428	8MP_JPG	USA, RAIN, GERMANY, DAY, EUROPE, LAS_VEGAS, CLEAR, HEAVY_RAIN	-1	-1	-1	07/01/2024, 15:44:34
+654cab2354107825f7756fc0	od_ncap_vw_closed_loop_demo_tt_test	test	test	1465	8MP_JPG	GERMANY, DAY, CLEAR	-1	-1	-1	07/01/2024, 17:49:37
+659acbb6d8ef2d6f5c529e2f	official_europe_munich_test	test	test	299	8MP_JPG		-1	-1	-1	07/01/2024, 18:05:27
+659acde7d8ef2d6f5c52d9c1	official_las_vegas_usa_test	test	test	440	8MP_JPG	USA, LAS_VEGAS, DAY	-1	-1	-1	07/01/2024, 18:14:47
+65cb36f0ab0e1008324427c1	_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_4_split_by_size_of_108_for_train_od_tagged	train	train	44	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	13/02/2024, 11:31:31
+65cb373cab0e100832442a35	_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_2_split_by_size_of_108_for_train_od_tagged	train	train	45	8MP_JPG	germany, kitzigen, test_track, wolfsburg	-1	-1	-1	13/02/2024, 12:30:53
+65cb450eab0e100832449c7e	_pert_palatine_for_train_od_tagged	train	train	1066	8MP_JPG	/PRE_DAG_UPLOUDS/IL_AB/2023_08_23/2023_08_23_22_39_06/2023_08_23_22_39_06, day, highway, israel, night, urban	-1	-1	-1	13/02/2024, 12:31:45
+62f8f4ae07d51f1227be1751	sanity_longi_ped_day_test_14_08	test	undefined	12286	QUAD		-1	-1	-1	15/02/2024, 13:59:03
+62f8f53a07d51f1227be17a8	sanity_longi_2w_day_test_14_08	test	undefined	4958	QUAD		-1	-1	-1	15/02/2024, 14:06:19
+62f8f62307d51f1227be19a3	sanity_crossing_2w_day_test_14_08	test	undefined	3024	QUAD		-1	-1	-1	15/02/2024, 14:09:24
+62f8f66f07d51f1227be1e5a	sanity_longi_4w_day_test_14_08	test	undefined	3176	QUAD		-1	-1	-1	15/02/2024, 14:11:21
+62f8f0aa07d51f1227be0e7b	sanity_crossing_ped_night_test_14_08	test	undefined	2922	QUAD		-1	-1	-1	15/02/2024, 14:15:51
+62f8f0f507d51f1227be0e9f	sanity_longi_ped_night_test_14_08	test	undefined	1480	QUAD		-1	-1	-1	15/02/2024, 14:17:46
+62f8e8cb07d51f1227bdee21	ncap_longi_ped_day_test_14_08	test	undefined	2011	QUAD	CPFA, SPEED_55, DAY, CPLA, SPEED_40, NCAP, SPEED_60	-1	-1	-1	15/02/2024, 14:18:49
+62f8e6de07d51f1227bde8ac	combined_ncap_longi_2w_day_test_14_08	test	undefined	3572	QUAD	SPEED_40, SPEED_60, DAY, CBLA, NCAP, SPEED_30	-1	-1	-1	15/02/2024, 15:12:18
+65ce0db5ab0e100832451c52	ncap_crossing_2w_day_test_14_08_added_to_odtaggeddataboard	test	test	2012	QUAD	NCAP	-1	-1	-1	15/02/2024, 15:12:32
+62f8e7b607d51f1227bded18	combined_ncap_longi_4w_day_test_14_08	test	undefined	2452	QUAD	DAY, CCRM, NCAP, SPEED_80, OVERLAP_75	-1	-1	-1	15/02/2024, 15:12:36
+62f8e89807d51f1227bdede4	combined_ncap_crossing_ped_day_test_14_08	test	undefined	1330	QUAD	DAY, SPEED_35, CPNC, NCAP, SPEED_20	-1	-1	-1	15/02/2024, 16:06:54
+63baba282426700446d4e8e4	official_4w_highway_and_urban_night_dataset_for_train_updated	train	train	764	QUAD	fixing, night, train	-1	-1	-1	28/02/2024, 12:32:51
+63bac7372426700446d546e4	official_batch4_night_set_for_train_updated	train	train	1347	QUAD	fixing, night, train	-1	-1	-1	28/02/2024, 12:33:40
+63bad9d52426700446d5b900	official_night_issues_set_for_train_updated	train	train	1603	QUAD	fixing, night, train	-1	-1	-1	28/02/2024, 12:35:48
+63babaab2426700446d4e98d	official_night_dataset_week_27_for_train_updated	train	train	831	QUAD	fixing, night, train	-1	-1	-1	28/02/2024, 12:36:47
+63bacf302426700446d5af5b	official_newman_conti_mfc520_japan_night_for_train_updated	train	train	15760	QUAD	night	-1	-1	-1	28/02/2024, 15:21:27
+63babc4c2426700446d4ea3a	official_combined_night_urban_and_highway_3_for_train_updated	train	train	4888	QUAD	night	-1	-1	-1	28/02/2024, 15:21:33
+64e375c97225d01c8be18b23	official_combined_night_urban_and_highway_2_for_train_updated_tagged_images	train	train	3878	QUAD	fixing, night, train	-1	-1	-1	10/03/2024, 16:58:00
+63bac6de2426700446d5378e	official_batch5_night_set_for_train_updated	train	train	1147	QUAD	fixing, night, train	-1	-1	-1	10/03/2024, 17:01:28
+6535079854107825f76b908f	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_3_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	fixing	-1	-1	-1	10/03/2024, 17:26:16
+65ed7b9879512c347d507908	_endemic_north_las_vegas_chosen_to_tag_every_3_images_to_tag_batch_1_each_300	train	train	53	8MP_JPG	CLEAR, TEL_AVIV, TAR_LINES, DAY, ISRAEL, ARROWS	-1	-1	-1	16/04/2024, 18:37:47
+665ed99306e1a362691f11dd	2w_crossing_100m_yv1_renault_demo_to_tag	train	train	120	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:19:04
+665ed99306e1a362691f11dc	2w_crossing_60m_yv_renault_demo_to_tag	train	train	120	8MP_JPG	GERMANY, CLEAR, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:19:16
+665ed99206e1a362691f11db	ped_crossing_40m_2_scenario_renault_demo_to_tag	train	train	120	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:19:27
+665ebe4806e1a362691f0501	_4w_crossing_80m_80kph_1_scenario_renault_demo_to_tag	train	train	49	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:19:37
+665ebe4706e1a362691f0500	_ped_crossing_60m_yv_renault_demo_to_tag	train	train	180	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:19:50
+665ebe4606e1a362691f04ff	_4w_crossing_120m_80kph_1_scenario_renault_demo_to_tag	train	train	58	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:20:00
+665ebe4506e1a362691f04fe	_ped_crossing_80m_yv_renault_demo_to_tag	train	train	240	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:20:14
+665ebe4406e1a362691f04fd	_ped_crossing_70m_yv_renault_demo_to_tag	train	train	180	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:20:27
+665ebe4106e1a362691f04fb	_2w_crossing_100m_3_scenario_renault_demo_to_tag	train	train	120	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:20:52
+665ebe4006e1a362691f04fa	_2w_crossing_60m_3_scenario_renault_demo_to_tag	train	train	180	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:21:03
+665ebe3f06e1a362691f04f9	_2w_crossing_40m_yv_renault_demo_to_tag	train	train	180	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:21:15
+665ebe3e06e1a362691f04f8	_2w_crossing_40m_3_scenario_renault_demo_to_tag	train	train	120	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:21:24
+665ddfb906e1a362691efa13	od_sanity_4w_heading_static_30m_deg_45_renault_fr	train	train	21	8MP_JPG	GERMANY, DAY, RENAULT, DEMO	-1	-1	-1	04/06/2024, 13:21:32
+665dd9b106e1a362691ef9fc	4w_longi_300m_20kph_2_scenario_with_b2b_train_therapeutic_hoboken	train	train	120	8MP_JPG	GERMANY, DAY, CLOUDY, DEMO	-1	-1	-1	04/06/2024, 13:21:42
+665dd26206e1a362691ef4a3	od_sanity_4w_heading_static_30m_deg_315_renault_fr	train	train	20	8MP_JPG	GERMANY, DAY, RENAULT, DEMO	-1	-1	-1	04/06/2024, 13:21:49
+665dd16806e1a362691ef3fd	od_sanity_4w_heading_static_30m_deg_225_renault_fr	train	train	20	8MP_JPG	GERMANY, DAY, TWILIGHT, DEMO, CLOUDY, RENAULT	-1	-1	-1	04/06/2024, 13:21:57
+665dcfb306e1a362691ef205	od_sanity_4w_heading_static_30m_deg_270_renault_fr	train	train	20	8MP_JPG	GERMANY, DAY, RENAULT, DEMO	-1	-1	-1	04/06/2024, 13:22:06
+665da13906e1a362691e9ee9	unintelligent_fishers_every_30_images	train	train	60	8MP_JPG	GERMANY, DAY, CLOUDY	-1	-1	-1	04/06/2024, 13:22:15
+665dbf8306e1a362691eed11	passing_spokane_valley_with_b2b_train	train	train	51	8MP_JPG	GERMANY, DAY, CLOUDY	-1	-1	-1	04/06/2024, 13:22:42
+665dbf8206e1a362691eed0e	double_greeley_with_b2b_train	train	train	60	8MP_JPG	GERMANY, DAY, CLOUDY	-1	-1	-1	04/06/2024, 13:22:50
+665dbf8406e1a362691eed13	wide_shreveport_with_b2b_train	train	train	60	8MP_JPG	GERMANY, DAY, CLOUDY	-1	-1	-1	04/06/2024, 13:23:10
+665eeb1106e1a362691f3bb5	wide_shreveport_to_tag_batch_0_each_300_added_to_odtaggeddataboard	train	train	290	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:23:13
+665d833e06e1a362691e9b35	_medium_hallandale_beach_every_30_images_to_tag	train	train	240	8MP_JPG	GERMANY, DAY, YELLOW_VEST	-1	-1	-1	04/06/2024, 13:25:16
+665d833d06e1a362691e9b34	_bewildered_burien_every_30_images_to_tag	train	train	199	8MP_JPG	GERMANY, DAY	-1	-1	-1	04/06/2024, 13:25:33
+665f0af806e1a362691f65f6	od_sanity_4w_heading_static_30m_deg_180_renault_fr_to_tag	train	train	21	8MP_JPG	CLEAR, GERMANY, DAY	-1	-1	-1	04/06/2024, 16:30:44
+665f0af506e1a362691f65f3	od_sanity_4w_heading_static_30m_deg_135_renault_fr_to_tag	train	train	21	8MP_JPG	CLEAR, GERMANY, DAY	-1	-1	-1	04/06/2024, 16:30:54
+665f0af406e1a362691f65f1	od_sanity_4w_heading_static_30m_deg_90_renault_fr_to_tag	train	train	21	8MP_JPG	CLEAR, GERMANY, DAY	-1	-1	-1	04/06/2024, 16:31:01
+665f0af006e1a362691f65ee	od_sanity_4w_heading_static_30m_deg_0_renault_fr_to_tag	train	train	53	8MP_JPG	CLEAR, GERMANY, DAY	-1	-1	-1	04/06/2024, 16:31:09
+665f0aed06e1a362691f65eb	ped_crossing_80m_2_scenario_to_tag	train	train	240	8MP_JPG	CLEAR, GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:10
+665ebe4306e1a362691f04fc	_ped_crossing_70m_3_scenario_renault_demo_to_tag	train	train	240	8MP_JPG	GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:14
+665dbf8506e1a362691eed14	steamy_surprise_with_b2b_train	train	train	240	8MP_JPG	GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:17
+665dbf8106e1a362691eeb81	unorthodox_newport_beach_with_b2b_train	train	train	54	8MP_JPG	GERMANY, CLOUDY, DAY	-1	-1	-1	05/06/2024, 10:13:19
+665d838206e1a362691e9b4e	daunting_lima_every_30_images_to_tag	train	train	289	8MP_JPG	YELLOW_VEST, GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:22
+665d837206e1a362691e9b48	inharmonious_morgan_hill_every_30_images_to_tag	train	train	240	8MP_JPG	YELLOW_VEST, GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:24
+665d836406e1a362691e9b43	evening_aliso_viejo_every_30_images_to_tag	train	train	289	8MP_JPG	GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:26
+665d835206e1a362691e9b3d	clean_bismarck_every_30_images_to_tag	train	train	288	8MP_JPG	GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:28
+665d834106e1a362691e9b37	flushed_loveland_every_30_images_to_tag	train	train	240	8MP_JPG	GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:29
+665d834006e1a362691e9b36	_either_las_cruces_every_30_images_to_tag	train	train	240	8MP_JPG	YELLOW_VEST, GERMANY, DAY	-1	-1	-1	05/06/2024, 10:13:31
+62f8f2f307d51f1227be0f1f	sanity_crossing_ped_day_test_14_08	undefined	undefined	36415	QUAD		-1	-1	-1	06/06/2024, 11:39:22
+62f8f6c707d51f1227be20e6	sanity_crossing_4w_day_test_14_08	undefined	undefined	3814	QUAD		-1	-1	-1	06/06/2024, 16:49:39
+65ed7ba579512c347d507919	_tangy_fitchburg_chosen_to_tag_every_3_images_to_tag_batch_1_each_300	train	train	55	8MP_JPG	ARROWS, TEL_AVIV, ISRAEL, CLEAR, DAY	-1	-1	-1	16/06/2024, 10:59:58
+65ed7ba279512c347d507915	_potent_valdosta_chosen_to_tag_every_3_images_to_tag_batch_1_each_300	train	train	190	8MP_JPG	ARROWS, TEL_AVIV, ISRAEL, CLEAR, DAY	-1	-1	-1	16/06/2024, 11:00:07
+65ed7b9d79512c347d50790f	_likeable_hampton_chosen_to_tag_every_3_images_to_tag_batch_1_each_300	train	train	37	8MP_JPG	ARROWS, TEL_AVIV, ISRAEL, CLEAR, DAY	-1	-1	-1	16/06/2024, 11:00:19
+66719b6821a647736461e72d	day_clear_urban_tel_aviv_od_test_10fps	test	test	13779	8MP_JPG	NIGHT, ARROWS, CLEAR, DAY, SUNNY, ISRAEL	-1	-1	-1	19/06/2024, 17:25:58
+66792eaa0273422c87058526	_strange_trucks_task_official_super_set_od_train_8mp_to_tag_batch_244_each_200_added_to_odtaggeddataboard	train	train	5	AMBARELLA_3840_1920	CLEAR, DAY, ISRAEL	-1	-1	-1	24/06/2024, 11:30:34
+6527c4aa54107825f76a5053	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_12_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:07
+6527c52354107825f76a5057	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_9_split_by_size_of_100_od_for_train_tagged	train	train	96	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:25
+6527c4d354107825f76a5054	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_11_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:27
+6527cdb454107825f76a5078	official_od_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_0_split_by_size_of_108_od_for_train_tagged	train	train	86	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:38
+6527cd8854107825f76a5077	official_od_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_1_split_by_size_of_108_od_for_train_tagged	train	train	43	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:40
+6527cd6654107825f76a5075	official_od_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_2_split_by_size_of_108_od_for_train_tagged	train	train	63	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:42
+6527cd3e54107825f76a5074	official_od_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_3_split_by_size_of_108_od_for_train_tagged	train	train	108	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:45
+6527cd0e54107825f76a5072	official_od_buildings_test_track_kitzingen_superset_6502b36e7edfb609dc1b4b00_for_fa_removal_train_skipped_every_10_img_batch_4_split_by_size_of_108_od_for_train_tagged	train	train	64	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:47
+6527c5e954107825f76a505d	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_4_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:50
+6527c5c354107825f76a505c	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_5_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:52
+6527c59c54107825f76a505b	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_6_split_by_size_of_100_od_for_train_tagged	train	train	98	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:54
+6527c57354107825f76a5059	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_7_split_by_size_of_100_od_for_train_tagged	train	train	96	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:56
+6527c54c54107825f76a5058	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_8_split_by_size_of_100_od_for_train_tagged	train	train	100	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:36:58
+6535079f54107825f76b951f	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_12_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:37:34
+6526b88e54107825f76a4d33	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_9_split_by_size_of_200_od_for_train_tagged	train	train	106	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:37:38
+6526b5ae54107825f76a4d11	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_13_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:37:42
+6526b48c54107825f76a4d0e	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_14_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:37:45
+6526b39d54107825f76a4d07	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_15_split_by_size_of_200_od_for_train_tagged	train	train	187	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:37:47
+6526b99b54107825f76a4d38	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_7_split_by_size_of_200_od_for_train_tagged	train	train	199	8MP_JPG	CLEAR, GERMANY, DEMO, ARROWS, NIGHT	-1	-1	-1	24/06/2024, 11:37:59
+6522d6f154107825f76a3a47	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_6_split_by_size_of_200_od_for_train_tagged	train	train	141	8MP_JPG	TAR_LINES, CLEAR, GERMANY, DEMO, NIGHT	950	1675	1585	24/06/2024, 11:38:04
+6526baab54107825f76a4d3b	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_4_split_by_size_of_200_od_for_train_tagged	train	train	118	8MP_JPG	CLEAR, GERMANY, DEMO, ARROWS, NIGHT	-1	-1	-1	24/06/2024, 11:38:18
+6565f44efa38f84eb4f876bc	_2023_09_07_23_58_56_wolfsbourg_magna_clear_night1_2_skipped_120_batch_4_split_by_size_of_100_for_train_od_tagged	train	train	45	8MP_JPG	CLEAR, EUROPE, GERMANY, DEMO, VWB, NIGHT	-1	-1	-1	24/06/2024, 11:39:24
+6565f3a1fa38f84eb4f85ba9	_collected_night_random_from_wolfsburg_demo_v2_batch_27_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:41:20
+6565f398fa38f84eb4f856a5	_collected_night_random_from_wolfsburg_demo_v2_batch_28_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:41:24
+6565f3bdfa38f84eb4f86571	_collected_night_random_from_wolfsburg_demo_v2_batch_24_split_by_size_of_200_for_train_od_tagged	train	train	177	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:41:44
+6526a7f454107825f76a4c72	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_23_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:41:50
+6535078a54107825f76b8a00	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_22_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:01
+6526a8ef54107825f76a4c75	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_20_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:04
+6526a86e54107825f76a4c74	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_21_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:05
+6526aad154107825f76a4c7a	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_17_split_by_size_of_200_od_for_train_tagged	train	train	171	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:16
+6526a97854107825f76a4c76	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_19_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:18
+6526ab8154107825f76a4c7e	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_16_split_by_size_of_200_od_for_train_tagged	train	train	177	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:32
+6526ac2754107825f76a4c8a	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_15_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:44
+6535079254107825f76b8faa	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_14_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:42:58
+6565f3c6fa38f84eb4f86c15	_collected_night_random_from_wolfsburg_demo_v2_batch_13_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:43:14
+6526aea154107825f76a4c95	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_9_split_by_size_of_200_od_for_train_tagged	train	train	128	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:43:15
+6526adf854107825f76a4c94	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_10_split_by_size_of_200_od_for_train_tagged	train	train	143	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:43:17
+6526ad5254107825f76a4c92	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_11_split_by_size_of_200_od_for_train_tagged	train	train	130	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:43:18
+6526bbd454107825f76a4d55	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_3_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:44:08
+6526b2bd54107825f76a4d00	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_0_split_by_size_of_200_od_for_train_tagged	train	train	95	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:44:09
+6526b20054107825f76a4cff	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_1_split_by_size_of_200_od_for_train_tagged	train	train	168	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 11:44:11
+6522d78754107825f76a3a4f	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_0_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	950	1675	1585	24/06/2024, 11:44:14
+6522d75d54107825f76a3a4e	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_1_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	950	1675	1585	24/06/2024, 11:44:16
+65688782fa38f84eb40087b5	__ncap_vw_closed_loop_demo_tt_train_batch_0_split_by_size_of_867_tagged	train	train	740	8MP_JPG	CLEAR, DAY, OD_NCAP	950	-1	-1	24/06/2024, 11:44:42
+6538387454107825f76c00bf	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_50_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DEMO, RAIN, DAY, GERMANY	-1	-1	-1	24/06/2024, 11:46:14
+6460cd2bbe8ede2209d18657	night_light_rain_after_filtering_for_train_03_03_23_for_train_tagged	train	train	91	8MP_JPG	RAIN, EUROPE, NIGHT	950	0	0	24/06/2024, 12:14:25
+6347f6675378b16a97be5bf4	train_ab_car_germany_dummy_child	train	train	103	AMBARELLA_3840_1920		950	1675	1585	24/06/2024, 12:17:09
+6347d1bc5378b16a97bbcc45	ab_car_germany_dummy_train	train	train	151	AMBARELLA_3840_1920		950	1675	1585	24/06/2024, 12:17:26
+659ac646d8ef2d6f5c523a95	official_europe_night_for_train	train	train	1172	8MP_JPG	FRANCE, CLEAR, RAIN, EUROPE, GERMANY, NIGHT	-1	-1	-1	24/06/2024, 12:25:41
+6565f454fa38f84eb4f877ab	_2023_09_07_23_58_56_wolfsbourg_magna_clear_night1_2_skipped_120_batch_3_split_by_size_of_100_for_train_od_tagged	train	train	46	8MP_JPG	CLEAR, EUROPE, GERMANY, DEMO, VWB, NIGHT	-1	-1	-1	24/06/2024, 12:28:33
+6565f3defa38f84eb4f874e6	_2023_09_08_02_24_38_city_magna_clear_night_skipped_120_batch_0_split_by_size_of_100_for_train_od_tagged	train	train	90	8MP_JPG	CLEAR, DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 12:28:35
+6565f38ffa38f84eb4f84a05	_od_night_issues_22_11_2023_train_batch_0_split_by_size_of_384_tagged	train	train	378	8MP_JPG	CLEAR, EUROPE, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 12:28:41
+6565f3aafa38f84eb4f85eed	_collected_night_random_from_wolfsburg_demo_v2_batch_26_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	DEMO, NIGHT, GERMANY	-1	-1	-1	24/06/2024, 12:30:19
+665c2be306e1a362691e8f79	asymmetrical_bullhead_city_every_10_images_filtered_to_tag_batch_3_each_172	train	train	172	8MP_JPG	ARROWS, CLOUDY, DAY, CROSSWALK, MAGNA	-1	-1	-1	24/06/2024, 13:14:07
+665c2be306e1a362691e8f78	asymmetrical_bullhead_city_every_10_images_filtered_to_tag_batch_2_each_172	train	train	172	8MP_JPG	ARROWS, CLOUDY, DAY, CROSSWALK, MAGNA	-1	-1	-1	24/06/2024, 13:14:26
+665c2be306e1a362691e8f77	asymmetrical_bullhead_city_every_10_images_filtered_to_tag_batch_1_each_172	train	train	172	8MP_JPG	ARROWS, CLOUDY, DAY, CROSSWALK, MAGNA	-1	-1	-1	24/06/2024, 13:14:45
+665c2be206e1a362691e8f76	asymmetrical_bullhead_city_every_10_images_filtered_to_tag_batch_0_each_172	train	train	172	8MP_JPG	ARROWS, CLOUDY, DAY, CROSSWALK, MAGNA	-1	-1	-1	24/06/2024, 13:15:03
+654cd46254107825f775e7ef	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_7_split_by_size_of_200_for_test_od_tagged	test	test	200	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:07:33
+654cd48b54107825f7761c41	____2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_0_split_by_size_of_200_for_test_od_tagged	test	test	199	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, BRIDGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:02
+654cd48554107825f77614aa	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_1_split_by_size_of_200_for_test_od_tagged	test	test	200	8MP_JPG	WET_ROAD, DAY, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, HIGHWAY_EXIT	950	1675	1585	26/06/2024, 18:09:04
+654cd48054107825f7760c87	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_2_split_by_size_of_200_for_test_od_tagged	test	test	200	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:06
+654cd47a54107825f77603c3	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_3_split_by_size_of_200_for_test_od_tagged	test	test	199	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:09
+654cd47454107825f775ff6c	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_4_split_by_size_of_200_for_test_od_tagged	test	test	199	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, HIGHWAY_EXIT, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:32
+654cd4bf54107825f7767d60	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_11_split_by_size_of_500_for_test_od_tagged	test	test	206	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:51
+654cd4b954107825f776742b	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_12_split_by_size_of_500_for_test_od_tagged	test	test	78	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:53
+654cd4b454107825f7766f70	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_13_split_by_size_of_500_for_test_od_tagged	test	test	500	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:54
+654cd4ac54107825f776614e	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_14_split_by_size_of_500_for_test_od_tagged	test	test	278	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, HIGHWAY_EXIT, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:56
+654cd4a454107825f77652fd	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_15_split_by_size_of_500_for_test_od_tagged	test	test	495	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, HIGHWAY_EXIT, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:09:58
+654cd49b54107825f7763ae7	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_16_split_by_size_of_500_for_test_od_tagged	test	test	432	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, HIGHWAY_EXIT, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:10:01
+654cd49354107825f776309c	_2023_08_16_17_02_13_dekra_moehringen_rain_day_skipped_6_batch_19_split_by_size_of_500_for_test_od_tagged	test	test	500	8MP_JPG	WET_ROAD, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, HIGHWAY_EXIT, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, DAY	950	1675	1585	26/06/2024, 18:10:03
+654cd46e54107825f775f6a0	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_5_split_by_size_of_200_for_test_od_tagged	test	test	200	8MP_JPG	WET_ROAD, DAY, SPECIAL_VEHICLE, GERMANY, EU_SR, CROSSWALK, RAIN, DOT_BOTS, UNCATEGORIZED_EVENT, CLEAR, EUROPE, LANE_CHANGE, TUNNEL, HIGHWAY_EXIT	950	1675	1585	26/06/2024, 18:10:06
+6668415b06e1a3626922d922	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_6_each_100	test	test	4	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	26/06/2024, 18:27:36
+6668415406e1a3626922d921	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_5_each_100	test	test	100	8MP_JPG	DAY, CLEAR, ISRAEL	-1	-1	-1	26/06/2024, 18:37:41
+6668414c06e1a3626922d920	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_4_each_100	test	test	100	8MP_JPG	DAY, CLEAR, ISRAEL	-1	-1	-1	26/06/2024, 18:37:52
+6668414506e1a3626922d91e	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_2_each_100	test	test	100	8MP_JPG	DAY, CLEAR, ISRAEL	-1	-1	-1	26/06/2024, 18:38:04
+6668413206e1a3626922d91d	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_1_each_100	test	test	100	8MP_JPG	DAY, CLEAR, ISRAEL	-1	-1	-1	26/06/2024, 18:38:16
+6668412c06e1a3626922d91c	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_0_each_100	test	test	100	8MP_JPG	DAY, CLEAR, ISRAEL	-1	-1	-1	26/06/2024, 18:38:28
+6668414906e1a3626922d91f	israel_drive_imx728_isp_v4_yellow_images_extracted_manually_to_tag_batch_3_each_100	test	test	100	8MP_JPG	ISRAEL, DAY, CLEAR	-1	-1	-1	26/06/2024, 18:41:33
+62e8d79f07d51f12277bce72	youtube_germany_tagged_amba_new	train	train	411	AMBARELLA_3840_1920	DAY	950	1675	1585	26/06/2024, 19:01:02
+65f7267979512c347d587872	uninspired_coeur_dalene_chosen_to_tag_every_3_images_to_tag	train	train	92	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS, WET_ROAD	-1	-1	-1	02/07/2024, 15:33:46
+65ed7ba679512c347d50791a	_thankful_lincoln_park_chosen_to_tag_every_3_images_to_tag	train	train	155	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:33:50
+65ed7ba579512c347d507918	_tangy_fitchburg_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:33:52
+65ed7ba179512c347d507914	_potent_valdosta_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:33:59
+65ed7b9f79512c347d507912	_penetrable_north_miami_chosen_to_tag_every_3_images_to_tag	train	train	244	8MP_JPG	CLEAR, TEL_AVIV, DAY, HIGHWAY_EXIT, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:03
+65ed7b9f79512c347d507911	_lucent_carlsbad_chosen_to_tag_every_3_images_to_tag	train	train	90	8MP_JPG	CLEAR, ISRAEL, TEL_AVIV, DAY	-1	-1	-1	02/07/2024, 15:34:06
+65ed7b9c79512c347d50790e	_likeable_hampton_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:08
+65ed7b9b79512c347d50790c	_guiltless_lincoln_park_chosen_to_tag_every_3_images_to_tag_batch_1_each_300	train	train	93	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:11
+65ed7b9b79512c347d50790b	_guiltless_lincoln_park_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:15
+65ed7b9979512c347d507909	_escalating_jefferson_city_chosen_to_tag_every_3_images_to_tag	train	train	205	8MP_JPG	CLEAR, TEL_AVIV, DAY, HIGHWAY_EXIT, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:17
+65ed7b9879512c347d507907	_endemic_north_las_vegas_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	TAR_LINES, TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:21
+65ed7b9679512c347d507905	_deceitful_cape_girardeau_chosen_to_tag_every_3_images_to_tag	train	train	274	8MP_JPG	BRIDGE, TEL_AVIV, DAY, CLEAR, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:23
+65ed7b9579512c347d507904	_concerning_cambridge_chosen_to_tag_every_3_images_to_tag	train	train	100	8MP_JPG	CLEAR, ISRAEL, TEL_AVIV, DAY	-1	-1	-1	02/07/2024, 15:34:25
+65ed7b9479512c347d507902	_audacious_appleton_chosen_to_tag_every_3_images_to_tag_batch_0_each_300	train	train	300	8MP_JPG	CLEAR, TEL_AVIV, DAY, HIGHWAY_EXIT, ISRAEL, ARROWS	-1	-1	-1	02/07/2024, 15:34:27
+6683f6230273422c870fbcb4	_strange_trucks_task_official_super_set_od_train_8mp_to_tag_batch_246_each_200_added_to_odtaggeddataboard	train	train	5	AMBARELLA_3840_1920	CLEAR, DAY	-1	-1	-1	02/07/2024, 15:44:19
+66792ec10273422c87059253	_strange_trucks_task_official_super_set_od_train_8mp_to_tag_batch_242_each_200_added_to_odtaggeddataboard	train	train	2	AMBARELLA_3840_1920	CLEAR, DAY	-1	-1	-1	04/07/2024, 16:44:13
+66792e950273422c870574a4	_strange_trucks_task_official_super_set_od_train_8mp_to_tag_batch_245_each_200_added_to_odtaggeddataboard	train	train	5	AMBARELLA_3840_1920	CLEAR, DAY	-1	-1	-1	04/07/2024, 16:44:24
+65ed7ba379512c347d507916	_punishable_germantown_chosen_to_tag_every_3_images_to_tag	train	train	294	8MP_JPG	ISRAEL, TEL_AVIV, HIGHWAY_EXIT, CLEAR, DAY	-1	-1	-1	04/07/2024, 16:45:18
+65cb36eaab0e1008324426ed	_od_strange_vehicles_20_12_2023_train_batch_2_split_by_size_of_250_tagged	train	train	249	8MP_JPG	EUROPE, GERMANY, RAIN, CLEAR, DAY	-1	-1	-1	04/07/2024, 16:45:54
+659accd9d8ef2d6f5c52a7fe	2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_8_split_by_size_of_200_tagged	test	test	200	8MP_JPG	DOT_BOTS, UNCATEGORIZED_EVENT, RAIN, EU_SR, WET_ROAD, SPECIAL_VEHICLE, TUNNEL, EUROPE, HIGHWAY_EXIT, GERMANY, LANE_CHANGE, CLEAR, DAY, CROSSWALK	-1	-1	-1	04/07/2024, 16:48:41
+656885ddfa38f84eb40079cf	___ncap_vw_closed_loop_demo_tt_train_batch_1_split_by_size_of_867_tagged	train	train	798	8MP_JPG	OD_NCAP, CLEAR, GERMANY, DAY	950	-1	-1	04/07/2024, 17:16:52
+6565f8fdfa38f84eb4f9d994	_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_0_split_by_size_of_200_for_train_od_tagged	train	train	199	8MP_JPG	RAIN, GERMANY, DAY, DEMO	-1	-1	-1	04/07/2024, 17:19:27
+6565f7c4fa38f84eb4f8ca12	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_47_split_by_size_of_500_tagged	train	train	500	8MP_JPG	RAIN, GERMANY, DAY, DEMO	950	-1	-1	07/07/2024, 8:56:34
+6565f7bbfa38f84eb4f8c045	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_48_split_by_size_of_500_tagged	train	train	499	8MP_JPG	RAIN, GERMANY, DAY, DEMO	-1	-1	-1	07/07/2024, 8:57:02
+6565f7b0fa38f84eb4f8b606	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_49_split_by_size_of_500_tagged	train	train	409	8MP_JPG	RAIN, GERMANY, DAY, DEMO	-1	-1	-1	07/07/2024, 8:57:24
+6565f448fa38f84eb4f875e2	_2023_09_07_23_58_56_wolfsbourg_magna_clear_night1_2_skipped_120_batch_5_split_by_size_of_100_for_train_od_tagged	train	train	52	8MP_JPG	NIGHT, EUROPE, DEMO, GERMANY, VWB, CLEAR	-1	-1	-1	07/07/2024, 8:59:12
+6565f3cefa38f84eb4f871c9	_collected_night_random_from_wolfsburg_demo_v2_batch_8_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	NIGHT, GERMANY, DEMO	-1	-1	-1	07/07/2024, 8:59:31
+6565f384fa38f84eb4f84096	_od_night_issues_22_11_2023_train_batch_2_split_by_size_of_384_tagged	train	train	375	8MP_JPG	NIGHT, EUROPE, CLEAR	-1	-1	-1	07/07/2024, 9:00:06
+654cd46854107825f775edd0	_2023_06_21_11_28_35_dekra_munich_rain_day_highway2_od_test_batch_6_split_by_size_of_200_for_test_od_tagged	test	test	200	8MP_JPG	DOT_BOTS, UNCATEGORIZED_EVENT, RAIN, WET_ROAD, SPECIAL_VEHICLE, TUNNEL, EUROPE, HIGHWAY_EXIT, GERMANY, LANE_CHANGE, EU_SR, CLEAR, DAY, CROSSWALK	950	1675	1585	07/07/2024, 9:00:23
+6527b3aa54107825f76a500d	official_od__sheep_superset_6502aaf17edfb609dc1b4ab9_for_fa_removal_train_skipped_every_10_img_batch_13_split_by_size_of_100_od_for_train_tagged	train	train	87	8MP_JPG	CLOUDY, DAY, GERMANY	-1	-1	-1	07/07/2024, 9:11:55
+6526b13254107825f76a4cc5	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_5_split_by_size_of_200_od_for_train_tagged	train	train	145	8MP_JPG	NIGHT, GERMANY, DEMO	-1	-1	-1	07/07/2024, 9:12:06
+6526b06154107825f76a4cb7	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_6_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	NIGHT, GERMANY, DEMO	-1	-1	-1	07/07/2024, 9:12:21
+6526af7c54107825f76a4c97	official_od_collected_night_random_from_wolfsburg_demo_v2_batch_7_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	NIGHT, GERMANY, DEMO	-1	-1	-1	07/07/2024, 9:12:37
+6522d73454107825f76a3a4b	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_2_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	NIGHT, GERMANY, DEMO	950	1675	1585	07/07/2024, 9:12:48
+6522d71054107825f76a3a48	official_od_collected_night_issues_from_wolfsburg_demo_v2_batch_5_split_by_size_of_200_od_for_train_tagged	train	train	125	8MP_JPG	NIGHT, VWB, GERMANY, DEMO, CLEAR	950	1675	1585	07/07/2024, 9:12:59
+651551b17edfb609dc1ba78e	official_od_wolfsburg_demo_night_v1_28_09_2023_for_train_tagged	train	train	6110	8MP_JPG	CLOUDY, DOUBLE_LANE_MARKS, BRIDGE, NIGHT, ARROWS, VWB, EUROPE, HIGHWAY_EXIT, TAR_LINES, GERMANY, DEMO, LANE_CHANGE, CLEAR	-1	-1	-1	07/07/2024, 9:19:30
+64f8366a7edfb609dc1b049c	night_dataset_tagging_net_problems_after_checking_for_train_tagged_added_to_official_super_set_od_train_8mp	train	train	421	8MP_JPG	NIGHT, RAIN, GERMANY	950	0	0	08/07/2024, 11:51:44
+64e75df27225d01c8be1a721	official_od_acordion_buses_21_08_23_for_train_tagged	train	train	300	8MP_JPG	TEL_AVIV, ISRAEL, DAY, CLEAR	950	1675	1585	08/07/2024, 11:54:01
+64be6696628d0605eb5a3f57	29072022_highwaya81_to_sailauf_night_ab_v0.8.1a_amba_rel11072022_combined_v1_tagged_for_train	train	train	1426	AMBARELLA_3840_1920	NIGHT	1000	-1	-1	08/07/2024, 12:42:40
+641c5450be8ede2209d008e4	night_light_rain_dataset_for_train_13_03_23_for_train_tagged	train	train	182	8MP_JPG	EUROPE, NIGHT, RAIN	950	1675	1585	08/07/2024, 12:47:10
+634508265378b16a979720c8	train_ab_car_memmingen_center_to_ottobeuren	train	train	554	AMBARELLA_3840_1920	GERMANY, SUNNY, DAY, EUROPE, CLOUDY	950	1675	1585	08/07/2024, 13:06:31
+62e8f3e107d51f12277ca0ce	amba2_germany_train_0208	train	train	1032	AMBARELLA_3840_1920	DAY	950	1675	1585	08/07/2024, 14:15:59
+6565f8ecfa38f84eb4f9cb44	_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_11_split_by_size_of_200_for_train_od_tagged	train	train	66	8MP_JPG	DAY, GERMANY, RAIN, DEMO	-1	-1	-1	14/07/2024, 10:38:20
+652cfbf254107825f76a6500	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_10_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	DEMO, DAY, RAIN, GERMANY	-1	-1	-1	14/07/2024, 14:32:58
+6666e52706e1a3626922d59a	vans_od_train_batch_2_to_tag_batch_2_each_100	train	train	30	8MP_JPG	CLEAR, DIRECT_SUN, DAY, EUROPE, ITALY, CLOUDY, SPAIN	-1	-1	-1	15/07/2024, 10:13:25
+6665952406e1a36269225f19	vans_od_train_batch_1_to_tag_batch_0_each_100	train	train	100	8MP_JPG	SPAIN, CLOUDY, LIGHT_RAIN, DAY, CLEAR	-1	-1	-1	17/07/2024, 12:38:42
+6665950406e1a36269225f0c	vans_od_train_batch_0_to_tag_batch_0_each_100	train	train	100	8MP_JPG	GERMANY, SNOW, DAY, EUROPE, ISRAEL	-1	-1	-1	17/07/2024, 12:39:04
+6666bc0b06e1a3626922834e	bronzed_harrisonburg_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:18
+6666bc0706e1a3626922834c	uninhibited_port_arthur_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:26
+6666bc0406e1a3626922834a	less_hutchinson_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:34
+6666bc0006e1a36269228348	steely_tempe_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:43
+6666bbfc06e1a36269228346	sketchy_elmhurst_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:51
+6666bbf906e1a36269228344	five_ankeny_every_30_images_to_tag	test	test	60	8MP_JPG	CLEAR, DAY, ISRAEL	-1	-1	-1	17/07/2024, 13:00:55
+63569a8f5378b16a9724d0c6	ab_car_germany_train	train	train	1620	AMBARELLA_3840_1920	SUNNY, GERMANY, DAY, RAIN, FRANCE, CLOUDY, TAR_LINES, EUROPE	950	1675	1585	17/07/2024, 18:27:45
+62e9083807d51f12277cb0ab	amba_train_set_detroit_day_snow_new	train	train	2358	AMBARELLA_3840_1920	DAY	950	1675	1585	17/07/2024, 18:29:06
+62e8e7c507d51f12277c95b4	amba_cali_train	train	train	291	AMBARELLA_3840_1920	DAY	950	1675	1585	17/07/2024, 18:29:40
+64e5fb8b7225d01c8be19ca8	combined_datasets_from_israel_for_test_12_06_2023_restored_v1_tagged	test	test	4411	8MP_JPG	CLOUDY, TEL_AVIV, SUNNY, DAY, CLEAR, DIRECT_SUN, ISRAEL, BRIDGE	950	1675	1585	17/07/2024, 19:03:44
+66950cb6b9653c153efaa8b2	israel_drive_imx728_isp_v6_images_extracted_manually_07_09_2024_01_44_52_batches_1_to_13_filtered_skip3_batch_0_each_200_to_tag	test	test	200	AMBARELLA_3840_1920	ISRAEL, DAY, CLEAR	-1	-1	-1	18/07/2024, 11:45:22
+6699224cb9653c153e023d50	od_release_test_set_tagged	test	test	30	8MP_JPG	SUNNY, ARROWS, CLEAR, IRELAND, STRAIGHT, ISRAEL, DAY, USA, LIGHT_RAIN	-1	-1	-1	18/07/2024, 17:10:21
+6565f898fa38f84eb4f96d8b	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_23_split_by_size_of_500_tagged	train	train	499	8MP_JPG	DEMO, GERMANY, RAIN, DAY	950	-1	-1	21/07/2024, 14:23:51
+6565f88efa38f84eb4f96193	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_24_split_by_size_of_500_tagged	train	train	499	8MP_JPG	DEMO, GERMANY, RAIN, DAY	950	-1	-1	21/07/2024, 14:23:53
+6565f884fa38f84eb4f95a68	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_26_split_by_size_of_500_tagged	train	train	496	8MP_JPG	DEMO, GERMANY, RAIN, DAY	950	-1	-1	21/07/2024, 14:23:56
+6565f878fa38f84eb4f952b4	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_27_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:23:58
+6565f86efa38f84eb4f94a40	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_28_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:24:00
+6565f862fa38f84eb4f941ff	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_29_split_by_size_of_500_tagged	train	train	499	8MP_JPG	DEMO, GERMANY, RAIN, DAY	950	-1	-1	21/07/2024, 14:24:02
+6565f858fa38f84eb4f93a6b	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_30_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:24:05
+6565f84efa38f84eb4f932b3	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_31_split_by_size_of_500_tagged	train	train	499	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:24:08
+6565f843fa38f84eb4f92715	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_32_split_by_size_of_500_tagged	train	train	498	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:24:10
+6565f838fa38f84eb4f92021	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_33_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DEMO, GERMANY, RAIN, DAY	-1	-1	-1	21/07/2024, 14:24:13
+653132f654107825f76a8c0b	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_25_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	RAIN, DEMO, DAY, WET_ROAD, GERMANY	-1	-1	-1	21/07/2024, 14:24:15
+6666e52706e1a3626922d599	vans_od_train_batch_2_to_tag_batch_1_each_100	train	train	100	8MP_JPG	EUROPE, CLEAR, SPAIN, CLOUDY, DIRECT_SUN, DAY, ITALY	-1	-1	-1	22/07/2024, 12:33:36
+6666e52706e1a3626922d598	vans_od_train_batch_2_to_tag_batch_0_each_100	train	train	100	8MP_JPG	EUROPE, CLEAR, SPAIN, CLOUDY, DIRECT_SUN, DAY, ITALY	-1	-1	-1	22/07/2024, 12:33:39
+6665952506e1a36269225f1c	vans_od_train_batch_1_to_tag_batch_3_each_100	train	train	53	8MP_JPG	LIGHT_RAIN, CLEAR, SPAIN, CLOUDY, DAY	-1	-1	-1	22/07/2024, 12:33:42
+6665952406e1a36269225f1b	vans_od_train_batch_1_to_tag_batch_2_each_100	train	train	100	8MP_JPG	LIGHT_RAIN, CLEAR, SPAIN, CLOUDY, DAY	-1	-1	-1	22/07/2024, 12:33:45
+6665952406e1a36269225f1a	vans_od_train_batch_1_to_tag_batch_1_each_100	train	train	100	8MP_JPG	LIGHT_RAIN, CLEAR, SPAIN, CLOUDY, DAY, WET_ROAD, TAR_LINES	-1	-1	-4	22/07/2024, 12:33:47
+6665950406e1a36269225f0e	vans_od_train_batch_0_to_tag_batch_2_each_100	train	train	79	8MP_JPG	EUROPE, SNOW, DAY, ISRAEL, GERMANY	-1	-1	-1	22/07/2024, 12:33:50
+6665950406e1a36269225f0d	vans_od_train_batch_0_to_tag_batch_1_each_100	train	train	100	8MP_JPG	EUROPE, SNOW, DAY, ISRAEL, GERMANY	-1	-1	-1	22/07/2024, 12:33:53
+66950cb8b9653c153efaa8b3	israel_drive_imx728_isp_v6_images_extracted_manually_07_09_2024_01_44_52_batches_1_to_13_filtered_skip3_batch_1_each_200_to_tag	test	test	200	AMBARELLA_3840_1920	DAY, ISRAEL, CLEAR	-1	-1	-1	22/07/2024, 13:43:08
+66950cbab9653c153efaa8b5	israel_drive_imx728_isp_v6_images_extracted_manually_07_09_2024_01_44_52_batches_1_to_13_filtered_skip3_batch_3_each_200_to_tag	test	test	136	AMBARELLA_3840_1920	CLEAR, DAY, ISRAEL	-1	-1	-1	22/07/2024, 13:46:13
+66950cb9b9653c153efaa8b4	israel_drive_imx728_isp_v6_images_extracted_manually_07_09_2024_01_44_52_batches_1_to_13_filtered_skip3_batch_2_each_200_to_tag	test	test	200	AMBARELLA_3840_1920	CLEAR, ISRAEL, DAY	-1	-1	-1	22/07/2024, 13:47:18
+62e8ecfa07d51f12277c9a7a	amba_taiwan_train_2_0208	train	train	213	AMBARELLA_3840_1920	ASIA, DAY, CLOUDY	950	1675	1585	28/07/2024, 11:37:06
+6565f8b9fa38f84eb4f99aee	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_20_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DAY, GERMANY, RAIN, DEMO	-1	-1	-1	31/07/2024, 14:59:18
+6565f8a2fa38f84eb4f97ea5	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_22_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DAY, GERMANY, RAIN, DEMO	950	-1	-1	31/07/2024, 14:59:27
+6538388254107825f76c0f7d	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_17_split_by_size_of_500_for_train_tagged	train	train	499	8MP_JPG	DAY, GERMANY, RAIN, DEMO	-1	-1	-1	31/07/2024, 14:59:50
+6565f8c7fa38f84eb4f9aa4c	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_18_split_by_size_of_500_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	950	-1	-1	31/07/2024, 16:46:02
+6565f8aefa38f84eb4f98eb8	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_21_split_by_size_of_500_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	950	-1	-1	31/07/2024, 16:46:06
+653838aa54107825f76c599d	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_12_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:10
+653838a254107825f76c46fe	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_13_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:14
+6538389954107825f76c3478	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_14_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:17
+6538389254107825f76c2a93	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_15_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:21
+6538388a54107825f76c1b4b	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_16_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:25
+6538387b54107825f76c085a	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_19_split_by_size_of_500_for_train_tagged	train	train	499	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	31/07/2024, 16:46:29
+6565f8fdfa38f84eb4f9d994	_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_0_split_by_size_of_200_for_train_od_tagged	train	train	199	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:18:50
+6565f8f5fa38f84eb4f9d309	_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_5_split_by_size_of_200_for_train_od_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	950	-1	-1	04/08/2024, 9:18:53
+653838c654107825f76c9ec2	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_3_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:18:56
+653838c054107825f76c94a5	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_4_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:00
+652cfb0f54107825f76a64fc	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_9_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:03
+652cfa2854107825f76a64f8	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_8_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:06
+652cf94854107825f76a64ef	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_7_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:09
+652cf86f54107825f76a64e3	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_6_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:11
+652cf79a54107825f76a64d8	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_2_split_by_size_of_200_od_for_train_tagged	train	train	200	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:13
+652cf6c954107825f76a64d0	official_od_dekra_munich_rain_day_highway_od_issues_2023_06_21_10_26_11_train_batch_1_split_by_size_of_200_od_for_train_tagged	train	train	199	8MP_JPG	GERMANY, RAIN, DAY, DEMO	-1	-1	-1	04/08/2024, 9:19:16
+64e38b787225d01c8be18bc7	official_urban_wuppertal_aptiv_filtered_peds_for_train_tagged_images	train	train	148	8MP_JPG	CLOUDY, GERMANY, CLEAR, WET_ROAD, ARROWS, DAY, EUROPE, SUNNY	950	1675	1585	04/08/2024, 9:19:24
+64254a32be8ede2209d06a5c	stellantis_empty_set_after_filtering_for_train_20_03_23_for_train_tagged	train	train	513	8MP_JPG	CLOUDY, GERMANY, FRANCE, DAY, EUROPE	950	1675	1585	04/08/2024, 9:19:29
+641ff5d5be8ede2209d02abb	erh_7799_20230308_112001_aptiv_day_10_fps_checking_for_train_tagged	train	train	143	8MP_JPG	DAY, TUNNEL, SNOW	950	1675	1585	04/08/2024, 9:19:34
+659ac992d8ef2d6f5c529006	official_europe_heavy_rain_for_train	train	train	500	8MP_JPG	WET_ROAD, GERMANY, LANE_CHANGE, DAY, RAIN	950	-1	-1	04/08/2024, 15:11:48
+6565f82dfa38f84eb4f9175f	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_34_split_by_size_of_500_tagged	train	train	483	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	04/08/2024, 15:11:50
+6565f822fa38f84eb4f91116	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_35_split_by_size_of_500_tagged	train	train	495	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:11:51
+6565f818fa38f84eb4f90a0a	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_36_split_by_size_of_500_tagged	train	train	498	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	04/08/2024, 15:11:53
+6565f80dfa38f84eb4f902d3	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_37_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	04/08/2024, 15:11:55
+6565f803fa38f84eb4f8fd07	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_38_split_by_size_of_500_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:11:56
+6565f7f9fa38f84eb4f8f455	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_41_split_by_size_of_500_tagged	train	train	495	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:11:58
+6565f7eefa38f84eb4f8ed9d	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_42_split_by_size_of_500_tagged	train	train	491	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:11:59
+6565f7e4fa38f84eb4f8e492	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_43_split_by_size_of_500_tagged	train	train	499	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:12:01
+6565f7d8fa38f84eb4f8dc10	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_44_split_by_size_of_500_tagged	train	train	498	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	04/08/2024, 15:12:02
+6565f7cefa38f84eb4f8d377	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_45_split_by_size_of_500_tagged	train	train	496	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	04/08/2024, 15:12:04
+653132ed54107825f76a845e	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_39_split_by_size_of_500_for_train_tagged	train	train	498	8MP_JPG	HIGHWAY_EXIT, GERMANY, DEMO, LANE_CHANGE, DAY, RAIN	-1	-1	-1	04/08/2024, 15:12:06
+653132e254107825f76a7e21	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_40_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	04/08/2024, 15:12:07
+64e38d7f7225d01c8be18be6	amba_youtube_validation_set_london_day_updated	train	train	1455	AMBARELLA_3840_1920	DAY	950	1675	1585	06/08/2024, 12:02:29
+62e8eaa407d51f12277c9770	amba_taiwan_train_0208	train	train	467	AMBARELLA_3840_1920	CLOUDY, DAY	950	1675	1585	06/08/2024, 12:02:33
+62dd57d62934ab0e865c3b0d	amba_las_vegas_train_fully	train	train	1173	AMBARELLA_3840_1920	DAY	950	1675	1585	06/08/2024, 12:02:40
+66793bcb0273422c870cb26a	_strange_trucks_task_official_super_set_od_train_8mp_to_tag_batch_0_each_200_added_to_odtaggeddataboard	train	train	1	AMBARELLA_3840_1920	DAY, CLEAR	-1	-1	-1	12/08/2024, 14:04:20
+64e38c887225d01c8be18bd1	01082022_koln_urban_ab_v0.8.1a_amba_rel11072022_part1_combined_v1new_updated	train	train	973	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 14:04:25
+64664b81be8ede2209d1c128	official_dataset_with_bus_images_only_combined_for_train_18_05_23	undefined	undefined	678	AMBARELLA_3840_1920	DAY, CLEAR	950	0	0	12/08/2024, 14:04:29
+6347f3ff5378b16a97be352a	train_set_stuttgar_urban_liran_batch_7_8_9_	train	train	184	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 14:04:32
+63397f7d5378b16a975095ae	train_sailauf_to_stuttgart_highway_cloudy_rainy	train	train	261	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 14:04:39
+63106cda6f140808cc7fbacb	stuttgart_urban_from_0_to_99_fr_30_train	train	train	994	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 14:04:52
+66ba03efdc62822ed0f826e9	fa_and_md_images_fix_from__test_tagged	test	test	1	AMBARELLA_3840_1920		-1	-1	-1	12/08/2024, 15:45:36
+66b46e30dc62822ed0f3036c	fa_and_md_images_fix_from__train	train	train	2	AMBARELLA_3840_1920	SUNNY, DAY	-1	-1	-1	12/08/2024, 15:52:18
+65f71e2079512c347d587840	_horizon_1000_fix_train_session_2_8mp_jpg_train_tagged	train	train	2036	8MP_JPG	EUROPE, CLEAR, DEMO, GERMANY, FRANCE, NIGHT	1000	-1	-1	12/08/2024, 16:30:40
+659ac459d8ef2d6f5c51e9cc	europe_unique_vehicles_for_train	train	train	1258	8MP_JPG	EUROPE, DAY, RAIN, GERMANY	-1	-1	-1	12/08/2024, 16:30:45
+659ac28bd8ef2d6f5c51a2d9	europe_fog_train	train	train	2510	8MP_JPG	FOG, EUROPE, DAY, GERMANY	-1	-1	-1	12/08/2024, 16:30:51
+6565f6d2fa38f84eb4f8b0c3	_od_unique_vehicles_v1_for_train_tagged	train	train	955	8MP_JPG	EUROPE, DAY, CLEAR, GERMANY	-1	-1	-1	12/08/2024, 16:30:56
+64e38bc27225d01c8be18bcc	official_fakt_wolfsburg_paris_4w_classifier_2ws_02_03_23_for_train_tagged_images	train	train	931	8MP_JPG	EUROPE, DAY, CLEAR, CLOUDY, SUNNY, GERMANY, FRANCE	950	1675	1585	12/08/2024, 16:31:01
+6460c613be8ede2209d185a4	paris_night_urban_for_train_tagged_14_05_23	train	train	912	8MP_JPG	DAY, NIGHT	950	1675	1585	12/08/2024, 16:31:05
+64244663be8ede2209d05db7	erh_7799_20230308_122429_aptiv_day_10_fps_after_checking_for_train_tagged	train	train	359	8MP_JPG	DAY, SNOW	950	1675	1585	12/08/2024, 16:31:09
+637ce3df5378b16a97aac904	train_22092022_frankfurt_urban_part1_combined	train	train	928	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 16:31:14
+6375e5d15378b16a97735d26	train_mainz_urban_part_1	train	train	1193	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 16:31:19
+63749d4a5378b16a976b2203	train_28102022_testrecording	train	train	408	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 16:31:23
+6373a77e5378b16a975855e0	22092022_frankfurt_urban_part3_until_part_88_of_90_train	train	train	1167	AMBARELLA_3840_1920	DAY, NIGHT	950	1675	1585	12/08/2024, 16:31:28
+635f95d15378b16a976796cd	train_22092022_frankfurt_urban_part2_combined	train	train	1282	AMBARELLA_3840_1920	EUROPE, DAY, GERMANY, FOG, NIGHT	950	1675	1585	12/08/2024, 16:31:34
+6342959d5378b16a978979c4	germany_train_g810412	train	train	808	AMBARELLA_3840_1920	EUROPE, DAY, SUNNY	950	1675	1585	12/08/2024, 16:31:38
+632334475378b16a97a7c036	koln_2_new_train	train	train	3375	AMBARELLA_3840_1920	DAY, NIGHT	950	1675	1585	12/08/2024, 16:31:47
+62fa5cf607d51f1227c87c18	germany_new_train_batch_1508	train	train	2739	AMBARELLA_3840_1920	DAY	950	1675	1585	12/08/2024, 16:31:51
+62e8f64807d51f12277ca5fb	germany_train_0208	train	train	3139	AMBARELLA_3840_1920	EUROPE, DAY, CLOUDY, SUNNY, GERMANY	950	1675	1585	12/08/2024, 16:31:57
+659abf8ad8ef2d6f5c51135b	israel_urban_with_buses	train	train	7943	8MP_JPG	DAY, NIGHT	-1	-1	-1	15/08/2024, 10:04:10
+659aa76bd8ef2d6f5c4eacbd	europe_israel_usa_special_trucks_cement_mixer_and_buses_for_train	train	train	867	8MP_JPG	DAY, SUNNY, ISRAEL	-1	-1	-1	15/08/2024, 10:04:15
+6565f8e3fa38f84eb4f9c94a	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_2_split_by_size_of_500_tagged	train	train	485	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	15/08/2024, 10:04:18
+6565f8d7fa38f84eb4f9be80	_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_11_split_by_size_of_500_tagged	train	train	498	8MP_JPG	DAY, RAIN, DEMO, GERMANY	950	-1	-1	15/08/2024, 10:04:21
+653838ba54107825f76c8cf5	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_9_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:24
+653838b254107825f76c73fd	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_10_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:28
+6535056954107825f76b8754	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_0_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:31
+6535055e54107825f76b7609	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_1_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	RAIN, GERMANY, WET_ROAD, DAY, DEMO, ARROWS	-1	-1	-1	15/08/2024, 10:04:34
+6535055354107825f76b6a66	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_3_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	RAIN, GERMANY, WET_ROAD, DAY, DEMO, ARROWS	-1	-1	-1	15/08/2024, 10:04:37
+6534fb9354107825f76b6185	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_4_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	RAIN, GERMANY, WET_ROAD, DAY, DEMO, ARROWS	-1	-1	-1	15/08/2024, 10:04:40
+6531331e54107825f76aafb9	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_5_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:43
+6531331454107825f76aa5ce	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_6_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, HEAVY_RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:46
+6531330a54107825f76a9c37	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_7_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:49
+6531330054107825f76a92da	official_od_2023_08_01_08_44_05_vaihingen_kitzingen_heavy_rain_day_as_single_set_skipped_6_batch_8_split_by_size_of_500_for_train_tagged	train	train	500	8MP_JPG	DAY, RAIN, DEMO, GERMANY	-1	-1	-1	15/08/2024, 10:04:52
+64e72a9e7225d01c8be1a546	official_od_diagonal_buses_22_08_23_for_train_tagged	train	train	464	8MP_JPG	CLEAR, TEL_AVIV, ISRAEL, DAY	950	1675	1585	15/08/2024, 10:04:54
