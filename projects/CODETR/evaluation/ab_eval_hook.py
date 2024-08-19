@@ -37,10 +37,11 @@ def update_config(config_path, output_dir, ground_truth_path, det_path, save_pat
 @HOOKS.register_module()
 class ABEvalHook(Hook):
 
-    def __init__(self, eval_path, gt_path, config_path) -> None:
+    def __init__(self, eval_path, gt_path, config_path, eval_name='NewEval') -> None:
         self.eval_path = eval_path
         self.gt_path = gt_path
         self.config_path = config_path
+        self.eval_name = eval_name
 
     def after_test_epoch(self, runner: Runner, metrics):
 
@@ -49,7 +50,8 @@ class ABEvalHook(Hook):
 
         det_path = osp.join(runner.work_dir, f"res_df_ep{runner.epoch}.tsv")
 
-        output_dir = osp.join(runner.work_dir, f"NewEval_ep{runner.epoch}")
+        output_dir = osp.join(
+            runner.work_dir, f"{self.eval_name}_ep{runner.epoch}")
 
         os.makedirs(output_dir, exist_ok=True)
 
