@@ -681,4 +681,4 @@ class CoDINOHead(DINOHead):
         # regression L1 loss
         loss_bbox = self.loss_bbox(
             bbox_preds, bbox_targets, bbox_weights, avg_factor=num_total_pos)
-        return loss_cls, loss_bbox, loss_iou
+        return loss_cls, loss_bbox, loss_iou# loss_ign

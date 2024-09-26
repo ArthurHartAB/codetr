@@ -34,6 +34,7 @@ class Inferencer:
                 inputs = self.pipeline({"img": np.array(img)})
 
                 results['predictions'].append(self.model.test_step(inputs))
+                
         return results
 
 

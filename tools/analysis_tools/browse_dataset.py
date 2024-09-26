@@ -52,9 +52,10 @@ def main():
     visualizer = VISUALIZERS.build(cfg.visualizer)
     visualizer.dataset_meta = dataset.metainfo
 
-    progress_bar = ProgressBar(len(dataset))
+    # progress_bar = ProgressBar(len(dataset))
 
-    small_dataset = [dataset[1000*i] for i in range(50)] # arthur
+    small_dataset = [dataset[100*i] for i in range(1000)]  # arthur
+    progress_bar = ProgressBar(len(small_dataset))
 
     for item in small_dataset:
         img = item['inputs'].permute(1, 2, 0).numpy()
