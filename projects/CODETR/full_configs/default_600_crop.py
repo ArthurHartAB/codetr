@@ -20,7 +20,6 @@ runner_type = 'ABRunner'
 
 num_classes = 4
 
-
 clear_ml_init = dict(
     project_name="CoDETR",
     task_name="test",
@@ -410,7 +409,7 @@ model = dict(
 num_dec_layer = 6
 optim_wrapper = dict(
     clip_grad=dict(max_norm=0.1, norm_type=2),
-    optimizer=dict(lr=0.0001*0.1, type='AdamW', weight_decay=0.1*0.0001),
+    optimizer=dict(lr=0.0001, type='AdamW', weight_decay=0.0001),
     paramwise_cfg=dict(custom_keys=dict(backbone=dict(lr_mult=0.1))),
     type='OptimWrapper')
 
@@ -431,7 +430,7 @@ test_cfg = dict(type='ABTestLoop')
 test_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/home/b2b/arthur/data/golden_night_set_validation/coco_labels.json',
+        ann_file='/home/b2b/arthur/data/921_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -460,7 +459,7 @@ test_dataloader = dict(
 test_crop_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='/home/b2b/arthur/data/golden_night_set_validation/coco_labels.json',
+        ann_file='/home/b2b/arthur/data/921_hard_images/coco_labels.json',
         data_prefix=dict(img='/'),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -735,14 +734,14 @@ custom_hooks = [
     dict(type='TSVHook'),
     dict(type="ABEvalHook",
          eval_path="/home/b2b/arthur/git/EvalBin",
-         gt_path="/home/b2b/arthur/data/golden_night_set_validation/gt.tsv",
+         gt_path="/home/b2b/arthur/data/921_hard_images/gt.tsv",
          config_path="/home/b2b/arthur/git/EvalBin/wrappers/wrapper_config.json",
-         eval_name='NewEval_night'),
+         eval_name='NewEval'),
     dict(type="ABEvalHook",
          eval_path="/home/b2b/arthur/git/EvalBin",
-         gt_path="/home/b2b/arthur/data/golden_night_set_validation/gt.tsv",
+         gt_path="/home/b2b/arthur/data/921_hard_images/gt.tsv",
          config_path="/home/b2b/arthur/git/EvalBin/wrappers/wrapper_config_with_ignore.json",
-         eval_name='NewEval_wi_night'),
+         eval_name='NewEval_wi'),
     dict(type="ABKPIHook"),
     # dict(type="ABClearMLHook",
     #     project_name="CODETR",

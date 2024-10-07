@@ -1,5 +1,8 @@
 # From https://github.com/cortica-iei/AB_AutoTagging_Inference
 
+MIN_THRESHOLD = 10
+
+
 thresholds = {
     "2w": {
         "bins": [

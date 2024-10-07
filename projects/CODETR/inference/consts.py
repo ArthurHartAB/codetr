@@ -1,18 +1,27 @@
 # From https://github.com/cortica-iei/AB_AutoTagging_Inference
 
-CROP_H_POS = 1920 / 2  # + 300  # + 100
+CROP_H_POS = 1920 / 2  # + 100
 CROP_H = 600
 
-BORDER_DELTA = 10
-INTERSECTION_DELTA = 10
+BORDER_DELTA = 20
+INTERSECTION_DELTA = 30
 
-# LABELS_MAP = {0: "2w", 1: "4w", 2: "ped", 3: "rider"}
-LABELS_MAP = {0: "2w", 1: "4w", 2: "ped", 3: "rider",
-              4: "4w", 5: "4w"}  # last two : "van", "truck"
-
+LABELS_MAP = {0: "2w", 1: "4w", 2: "ped", 3: "rider"}
 COCO_LABELS_MAP = {0: "BICYCLE", 1: "CAR", 2: "PEDESTRIAN", 3: "RIDER"}
 
-OUTPUT_COLUMNS = ['name', 'label', 'score', 'coco_label', 'x_center', 'y_center',
-                  'width', 'height', 'is_occluded', 'is_truncated',
-                  'd3_separation', 'l_label', 'r_label', 'is_rider_on_2_wheels',
-                  'box_correction']
+SCORE_COLUMN_NAME = 'codetr_score'
+LABEL_COLUMN_NAME = 'codetr_label'
+HANDLING_HINT_COLUMN_NAME = 'codetr_handling_hint'
+IGNORE_LABEL_SUFFIX = '_IGNORE'
+REMOVE_LABEL_SUFFIX = '_REMOVE'
+TRUNCATED_COLUMN_NAME = 'is_truncated'
+NMS_WAS_APPLIED_COLUMN_NAME = 'nms_was_applied'
+ORIGIN_COLUMN_NAME = 'codetr_origin'
+
+OUTPUT_COLUMNS = ('name', LABEL_COLUMN_NAME, SCORE_COLUMN_NAME, 'x_center', 'y_center',
+                  'width', 'height', HANDLING_HINT_COLUMN_NAME, 'version', TRUNCATED_COLUMN_NAME, NMS_WAS_APPLIED_COLUMN_NAME, ORIGIN_COLUMN_NAME)
+
+BATCH_SIZE = 4
+
+IMAGE_SHAPE = (1920, 3840)
+BLEED_CORRECTION = 0.0000000001

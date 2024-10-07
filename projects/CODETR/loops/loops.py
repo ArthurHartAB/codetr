@@ -72,8 +72,6 @@ class ABValLoop(BaseLoop):
                 level=logging.WARNING)
         self.fp16 = fp16
 
-        print("test evaluator: ", self.evaluator.__class__)
-
     def run(self) -> dict:
         """Launch validation."""
 
@@ -92,8 +90,7 @@ class ABValLoop(BaseLoop):
                 crop_data_batch = next(crop_dataloader_iterator)
 
             self.run_iter(idx, data_batch, crop_data_batch)
-            # print("dataloader_len : ", len(self.dataloader))
-            # print("idx : ", idx)
+
             # if idx >= 3:
             #    break
 
@@ -186,8 +183,6 @@ class ABTestLoop(BaseLoop):
                 level=logging.WARNING)
         self.fp16 = fp16
 
-        print("test evaluator: ", self.evaluator.__class__)
-
     def run(self) -> dict:
         """Launch validation."""
 
@@ -206,8 +201,7 @@ class ABTestLoop(BaseLoop):
                 crop_data_batch = next(crop_dataloader_iterator)
 
             self.run_iter(idx, data_batch, crop_data_batch)
-            # print("dataloader_len : ", len(self.dataloader))
-            # print("idx : ", idx)
+
             # if idx >= 3:
             #    break
 

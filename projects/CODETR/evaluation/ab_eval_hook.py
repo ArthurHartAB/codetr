@@ -22,26 +22,14 @@ import json
 # from projects.CODETR.evaluation.log_parser import NEWLogParser
 
 
-def update_config(config_path, output_dir, ground_truth_path, det_path, save_path):
-    with open(config_path, 'r') as file:
-        config = json.load(file)
-
-    config['output_dir'] = output_dir
-    config['ground_truth_path'] = ground_truth_path
-    config['det_path'] = det_path
-
-    with open(save_path, 'w') as file:
-        json.dump(config, file, indent=4)
-
-
 @HOOKS.register_module()
 class ABEvalHook(Hook):
 
-    def __init__(self, eval_path, gt_path, config_path, eval_name='NewEval') -> None:
+    def __init__(self, eval_path, gt_path, python_path, eval_name='FastEval') -> None:
         self.eval_path = eval_path
         self.gt_path = gt_path
-        self.config_path = config_path
         self.eval_name = eval_name
+        self.python_path = python_path
 
     def after_test_epoch(self, runner: Runner, metrics):
 
@@ -67,104 +55,9 @@ class ABEvalHook(Hook):
 
         os.system(f"export PYTHONPATH=$PYTONPATH:{self.eval_path}")
 
-        config_new_path = osp.join(output_dir, "wrapper.json")
-
-        update_config(self.config_path, output_dir,
-                      cut_gt_path, det_path, config_new_path)
-
-        command = f"cd {self.eval_path} && /home/b2b/anaconda3/envs/od_arthur/bin/python3 worker.py --config {config_new_path}"
+        command = f"cd {self.eval_path} && {self.python_path} runner.py --gt_path {cut_gt_path} --det_path {det_path} --output_path {output_dir}"
 
         os.system(command)
-
-    def after_val_epoch(self, runner: Runner, metrics):
-        self.after_test_epoch(runner, metrics)
-
-
-def recall_from_pr_df(pr_df, precision_value=0.75):
-    recalls_dict = {}
-    classes = pr_df.family.unique()
-
-    for cls in classes:
-        cls_pr = pr_df[pr_df.family == cls]
-        bins = cls_pr.range.unique()
-        recalls_dict[cls] = {}
-
-        for bin in bins:
-            cls_bin_pr = cls_pr[cls_pr.range == bin]
-            precisions = cls_bin_pr.precision.values  # [2:-2]
-            recalls = cls_bin_pr.recall.values  # [2:-2]
-
-            # Sort by recalls
-            sorted_indices = np.argsort(recalls)[::-1]
-            precisions = precisions[sorted_indices]
-            recalls = recalls[sorted_indices]
-
-            # Traverse through sorted values and apply the new logic
-            for i in range(len(precisions)):
-                if precisions[i] >= precision_value:
-                    if i == 0:
-                        recall = recalls[i]
-                    else:
-                        recall = np.interp(
-                            precision_value,
-                            [precisions[i-1], precisions[i]],
-                            [recalls[i-1], recalls[i]]
-                        )
-                    break
-            else:
-                # If no precision meets the target, use the last available recall
-                recall = recalls[-1]
-
-            recalls_dict[cls][bin] = recall
-
-    return recalls_dict
-
-
-@HOOKS.register_module()
-class ABKPIHook(Hook):
-
-    def __init__(self) -> None:
-        pass
-
-    def plot_recall(self, cls, bins_data, plot_dir, epoch):
-        bins = list(bins_data.keys())
-        recalls = list(bins_data.values())
-
-        plt.figure(figsize=(10, 5))
-        plt.plot(bins, recalls, marker='o', linestyle='-')
-        plt.xlabel('Bin')
-        plt.ylabel('Recall')
-        plt.title(f'Recall vs Bin for class {cls} at epoch {epoch}')
-        plt.ylim(0, 1)
-        plt.grid(True)
-
-        plot_path = osp.join(plot_dir, f"{cls}_recall_ep{epoch}.png")
-        # Ensure the directory exists
-        os.makedirs(osp.dirname(plot_path), exist_ok=True)
-        plt.savefig(plot_path)
-        plt.close()
-
-    def after_test_epoch(self, runner: Runner, metrics):
-
-        if runner.rank != 0:
-            return
-
-        eval_dir = osp.join(runner.work_dir, f"NewEval_ep{runner.epoch}")
-        plot_dir = osp.join(eval_dir, "plots")
-
-        pr_df = pd.read_csv(
-            osp.join(eval_dir, "outputs/all_kpis.tsv"), sep='\t')
-
-        recalls_dict = recall_from_pr_df(pr_df, precision_value=0.75)
-
-        for cls, bins_data in recalls_dict.items():
-            for bin, recall in bins_data.items():
-                metrics[f"recall_{cls}_{bin}"] = recall
-
-            # Generate plot for each class
-            self.plot_recall(cls, bins_data, plot_dir, runner.epoch)
-
-        print(metrics)
 
     def after_val_epoch(self, runner: Runner, metrics):
         self.after_test_epoch(runner, metrics)
@@ -184,26 +77,34 @@ class ABClearMLHook(Hook):
         if runner.rank != 0:
             return
 
-        eval_dir = osp.join(runner.work_dir, f"NewEval_ep{runner.epoch}")
-        plot_dir = osp.join(eval_dir, "plots")
+        eval_dir = osp.join(runner.work_dir, f"FastEval_ep{runner.epoch}")
 
-        if not osp.exists(plot_dir):
-            print(f"Plot directory {plot_dir} does not exist.")
-            return
+        metrics_incl_path = osp.join(eval_dir, "metrics_incl_ignores.tsv")
+        metrics_excl_path = osp.join(eval_dir, "metrics_excl_ignores.tsv")
 
-        # Log all plots in the directory to ClearML
-        for plot_file in os.listdir(plot_dir):
-            plot_path = osp.join(plot_dir, plot_file)
-            if plot_path.endswith(".png"):
-                cls = plot_file.split('_')[0]
-                self.logger.report_image(
-                    title=f'Recall vs Bin for class {cls}',
-                    series=f'epoch_{runner.epoch}',
+        metrics_incl_df = pd.read_csv(metrics_incl_path, sep='\t')
+        metrics_excl_df = pd.read_csv(metrics_excl_path, sep='\t')
+
+        for category in metrics_incl_df.category.unique():
+            mectics_incl_df_category = metrics_incl_df[metrics_incl_df.category == category]
+            for bin in mectics_incl_df_category.bin.unique():
+                metrics_incl_df_category_bin = metrics_incl_df[metrics_incl_df.bin == bin]
+                precisions = metrics_incl_df_category_bin.precision_strict.values()
+                recalls = metrics_incl_df_category_bin.recall_strict.values()
+
+                scatter2d = [precisions, recalls]
+
+                self.logger.report_scatter2d(
+                    title="PR curve",
+                    series=f"{category} {bin}",
                     iteration=runner.epoch,
-                    local_path=plot_path
+                    scatter=scatter2d,
+                    xaxis="precision",
+                    yaxis="recall",
+                    mode='lines+markers'
                 )
 
-        print(f"Plots from {plot_dir} have been sent to ClearML.")
+        print(f"Metrics have been sent to ClearML.")
 
     def after_val_epoch(self, runner: Runner, metrics):
         self.after_test_epoch(runner, metrics)

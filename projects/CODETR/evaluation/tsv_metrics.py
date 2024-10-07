@@ -15,8 +15,13 @@ from mmengine.evaluator import BaseMetric
 
 import os
 
-from projects.CODETR.inference.utils import parse_results
+from projects.CODETR.inference.utils import parse_results, clip_bboxes
 from projects.CODETR.inference.co_detr import CoDetr
+import projects.CODETR.inference.consts as consts
+
+
+from projects.CODETR.inference.thresholds import MIN_THRESHOLD
+
 
 import pandas as pd
 
@@ -25,13 +30,14 @@ import pandas as pd
 class TSVSaver(BaseMetric):
 
     def __init__(self,
-                 out_folder_path: str,
+                 crop_h: int = 300, crop_h_pos: int = 960,
                  collect_device: str = 'cpu',
                  collect_dir: Optional[str] = None) -> None:
         super().__init__(
             collect_device=collect_device, collect_dir=collect_dir)
 
-        self.out_folder_path = out_folder_path
+        consts.CROP_H = crop_h
+        consts.CROP_H_POS = crop_h_pos
 
         self.crop_results = []
 
@@ -74,10 +80,18 @@ class TSVSaver(BaseMetric):
         for img_name in crop_df['name'].unique():
             img_crop_df = crop_df[crop_df['name'] == img_name]
             img_resize_df = resize_df[resize_df['name'] == img_name]
-            res_df = CoDetr.merge_results(img_crop_df, img_resize_df)
-            res_df = CoDetr.nms_results_intersection(res_df)
-            res_df = CoDetr.apply_thresholds(res_df)
-            res_dfs.append(res_df)
+
+            image_res_df = CoDetr.merge_results(img_crop_df, img_resize_df)
+            image_res_df[consts.HANDLING_HINT_COLUMN_NAME] = "keep"
+            image_res_df = CoDetr.nms_results_intersection(image_res_df)
+            image_res_df = CoDetr.apply_thresholds(image_res_df)
+
+            image_res_df = image_res_df[image_res_df[consts.SCORE_COLUMN_NAME]
+                                        > MIN_THRESHOLD]
+            image_res_df = clip_bboxes(image_res_df)
+            image_res_df = CoDetr.mark_truncated(image_res_df)
+
+            res_dfs.append(image_res_df)
 
         res_df = pd.concat(res_dfs)
 

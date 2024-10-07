@@ -9,79 +9,50 @@ from PIL import Image
 
 from mmdet.apis import DetInferencer
 
-from projects.CODETR.inference.consts import CROP_H, CROP_H_POS, BORDER_DELTA, INTERSECTION_DELTA
-from projects.CODETR.inference.utils import parse_results
+from projects.CODETR.inference.consts import (CROP_H, CROP_H_POS, BORDER_DELTA, INTERSECTION_DELTA, SCORE_COLUMN_NAME,
+                                              LABEL_COLUMN_NAME, HANDLING_HINT_COLUMN_NAME, BATCH_SIZE, IMAGE_SHAPE,
+                                              TRUNCATED_COLUMN_NAME, NMS_WAS_APPLIED_COLUMN_NAME, ORIGIN_COLUMN_NAME)
+from projects.CODETR.inference.utils import add_bbox_columns, remove_bbox_columns, parse_results, clip_bboxes
 
-from projects.CODETR.inference.thresholds import thresholds
+from projects.CODETR.inference.thresholds import thresholds, MIN_THRESHOLD
 
 import torch
 import torchvision
 
-from mmengine.dataset import Compose
-
-
-class Inferencer:
-    def __init__(self, model, pipeline_cfg, device: str):
-        self.model = model
-        self.device = device
-        self.pipeline_cfg = pipeline_cfg
-        self.pipeline = Compose(pipeline_cfg[1:])
-
-    def forward(self, img_arr):
-        results = {"predictions": []}
-        with torch.no_grad():
-            for img in img_arr:
-                inputs = self.pipeline({"img": np.array(img)})
-
-                results['predictions'].append(self.model.test_step(inputs))
-                
-        return results
-
 
 class CoDetr:
-    def __init__(self, model, test_pipeline_cfg, device: str):
-
-        self.infer = Inferencer(model, test_pipeline_cfg, device)
-
-    @staticmethod
-    def get_image_array(image_uri):
-        image = Image.open(image_uri)
-        # image.resize((3840, 1980))
-        return image
+    def __init__(self, target_config_path, weights_path, device: str):
+        self.weights_path = weights_path
+        self.config_path = target_config_path
+        self.infer = DetInferencer(
+            model=self.config_path, weights=self.weights_path, device=device)
 
     @staticmethod
-    def get_image_id(image_uri):
-        return Path(image_uri).stem
+    def apply_nms(df: pd.DataFrame, iou_threshold: float = 0.9, handling_hint: str = 'nms'):
 
-    @staticmethod
-    def get_crop(image_array):
-        return image_array.crop((0, CROP_H_POS - CROP_H / 2, 3840, CROP_H_POS + CROP_H / 2))
+        def nms_per_group(frame):
+            bboxes = frame[['x1', 'y1', 'x2', 'y2']].values
+            scores = frame[SCORE_COLUMN_NAME].values
 
-    @staticmethod
-    def get_bbox(row):
-        x, y, h, w = row.height, row.width, row.x_center, row.y_center
-        x1, y1, x2, y2 = x - w/2, y - h/2, x + w/2, y + h/2
-        return [x1, y1, x2, y2]
+            nms_indices_in_frame = torchvision.ops.nms(
+                torch.tensor(bboxes, dtype=torch.float32),
+                torch.tensor(scores, dtype=torch.float32) / 100,
+                iou_threshold
+            ).tolist()
 
-    @staticmethod
-    def apply_nms(df, iou_threshold=0.9):
+            frame_indices = frame.index.to_numpy()
+            nms_indices_set = set(frame_indices[nms_indices_in_frame])
+
+            frame.loc[~frame.index.isin(
+                nms_indices_set), HANDLING_HINT_COLUMN_NAME] = handling_hint
+            return frame
+
         df = df.reset_index(drop=True)
+        add_bbox_columns(df)
+        df = df.groupby(['name', LABEL_COLUMN_NAME]).apply(
+            nms_per_group).reset_index(drop=True)
+        remove_bbox_columns(df)
 
-        for name in set(df.name):
-            for label in set(df.label):
-                frame = df[(df.name == name) & (df.label == label)]
-                bboxes = frame.apply(CoDetr.get_bbox, axis=1).tolist()
-                scores = frame['score'].tolist()
-
-                keep = torchvision.ops.nms(
-                    torch.tensor(bboxes, dtype=torch.float), torch.tensor(scores, dtype=torch.float)/100, iou_threshold)
-                remove = list(set(range(len(bboxes))) - set(keep.tolist()))
-
-                if len(remove) > 0:
-                    for idx in remove:
-
-                        df.loc[df.index == (frame.index[idx]), 'label'] = \
-                            df[df.index == (frame.index[idx])].label + '_nms'
         return df
 
     @staticmethod
@@ -89,30 +60,33 @@ class CoDetr:
         for label in thresholds.keys():
 
             min_height = thresholds[label]['bins'][-1][0]
-            is_in_bin = (df.label == label) & (df.height <= min_height) & (
-                df.score < thresholds[label]['ignore_threshs'][-1])
-            df.loc[is_in_bin, 'label'] = df[is_in_bin].label + "_ignore"
+            is_in_bin = (df[LABEL_COLUMN_NAME] == label) & (
+                df.height <= min_height)
+            df.loc[is_in_bin, HANDLING_HINT_COLUMN_NAME] = "small"
 
             max_height = thresholds[label]['bins'][0][1]
-            is_in_bin = (df.label == label) & (df.height > max_height) & (
-                df.score < thresholds[label]['ignore_threshs'][0])
-            df.loc[is_in_bin, 'label'] = df[is_in_bin].label + "_ignore"
+            is_in_bin = (df[LABEL_COLUMN_NAME] == label) & (
+                df.height > max_height)
+            df.loc[is_in_bin, HANDLING_HINT_COLUMN_NAME] = "large"
 
             for i in range(len(thresholds[label]['bins'])):
-
                 bin_min_height, bin_max_height = thresholds[label]['bins'][i]
                 ignore_thresh = thresholds[label]['ignore_threshs'][i]
                 remove_thresh = thresholds[label]['remove_threshs'][i]
 
-                is_in_bin = (df.label == label) & (
+                is_in_bin = (df[LABEL_COLUMN_NAME] == label) & (
                     df.height > bin_min_height) & (df.height <= bin_max_height)
 
-                is_ignore = is_in_bin & (df.score < ignore_thresh) & (
-                    df.score >= remove_thresh)
-                is_remove = is_in_bin & (df.score < remove_thresh)
+                should_handle = is_in_bin & (
+                    df[HANDLING_HINT_COLUMN_NAME] == "keep")
 
-                df.loc[is_ignore, 'label'] = df[is_ignore].label + "_ignore"
-                df.loc[is_remove, 'label'] = df[is_remove].label + "_remove"
+                is_ignore = should_handle & (df[SCORE_COLUMN_NAME] < ignore_thresh) & (
+                    df[SCORE_COLUMN_NAME] >= remove_thresh)
+                is_remove = should_handle & (
+                    df[SCORE_COLUMN_NAME] < remove_thresh)
+
+                df.loc[is_ignore, HANDLING_HINT_COLUMN_NAME] = "ignore"
+                df.loc[is_remove, HANDLING_HINT_COLUMN_NAME] = "remove"
 
         return df
 
@@ -138,21 +112,27 @@ class CoDetr:
 
         image_df = image_df[is_image_det_outside_boundary]
 
+        crop_df[ORIGIN_COLUMN_NAME] = "crop"
+        image_df[ORIGIN_COLUMN_NAME] = "image"
+
         return pd.concat([crop_df, image_df])
 
     @staticmethod
     def nms_results_intersection(df):
+
+        df[NMS_WAS_APPLIED_COLUMN_NAME] = 0
+
         boundary_bottom = CROP_H_POS + (CROP_H / 2) - BORDER_DELTA
         boundary_top = CROP_H_POS - (CROP_H / 2) + BORDER_DELTA
 
         det_bottom = df.y_center + (df.height / 2)
         det_top = df.y_center - (df.height / 2)
 
-        is_det_in_boundary = (det_bottom < boundary_bottom) & (
-            det_top > boundary_top)
+        is_det_in_boundary = (det_bottom < boundary_bottom + INTERSECTION_DELTA) & (
+            det_top > boundary_top - INTERSECTION_DELTA)
 
-        is_det_outside_boundary = (det_bottom > boundary_bottom - INTERSECTION_DELTA) | (
-            det_top < boundary_top + INTERSECTION_DELTA)
+        is_det_outside_boundary = (det_bottom > boundary_bottom - 2*INTERSECTION_DELTA) | (
+            det_top < boundary_top + 2*INTERSECTION_DELTA)
 
         is_det_in_intersection_delta = is_det_in_boundary & is_det_outside_boundary
 
@@ -161,7 +141,20 @@ class CoDetr:
             return df
 
         in_intersection_df_nms = CoDetr.apply_nms(
-            in_intersection_df, iou_threshold=0.9)
+            in_intersection_df, iou_threshold=0.75, handling_hint='nms_75')
+
+        in_intersection_df_nms = CoDetr.apply_nms(
+            in_intersection_df_nms, iou_threshold=0.9, handling_hint='nms_90')
+
+        in_intersection_df_nms.loc[in_intersection_df_nms[HANDLING_HINT_COLUMN_NAME] == 'nms_75',
+                                   SCORE_COLUMN_NAME] = in_intersection_df_nms[in_intersection_df_nms[HANDLING_HINT_COLUMN_NAME] == 'nms_75'][SCORE_COLUMN_NAME]/2
+
+        in_intersection_df_nms.loc[in_intersection_df_nms[HANDLING_HINT_COLUMN_NAME]
+                                   == 'nms_75', HANDLING_HINT_COLUMN_NAME] = 'ignore'
+        in_intersection_df_nms.loc[in_intersection_df_nms[HANDLING_HINT_COLUMN_NAME]
+                                   == 'nms_90', HANDLING_HINT_COLUMN_NAME] = 'nms'
+
+        in_intersection_df_nms[NMS_WAS_APPLIED_COLUMN_NAME] = 1
 
         not_in_intersection_df = df[~is_det_in_intersection_delta]
 
@@ -169,21 +162,14 @@ class CoDetr:
 
         return nms_df
 
-    def run(self, image_uri, *args, **kwargs):
-        image_id = CoDetr.get_image_id(image_uri)
-        image_array = CoDetr.get_image_array(image_uri)
-        crop = CoDetr.get_crop(image_array)
+    @staticmethod
+    def mark_truncated(detections: pd.DataFrame) -> pd.DataFrame:
+        truncate_margin = np.maximum(10, detections.width * 0.1)
 
-        results_dict = self.infer.forward(
-            (np.array(crop), np.array(image_array)))
+        detections[TRUNCATED_COLUMN_NAME] = (
+            ((detections.x_center - detections.width / 2) <= truncate_margin) |
+            ((IMAGE_SHAPE[1] - (detections.x_center +
+                                detections.width / 2)) <= truncate_margin)
+        ).astype(int)
 
-        results_crop_df = parse_results(
-            image_id, results_dict['predictions'][0])
-        results_image_df = parse_results(
-            image_id, results_dict['predictions'][1])
-
-        res_df = CoDetr.merge_results(results_crop_df, results_image_df)
-        res_df = CoDetr.nms_results_intersection(res_df)
-        res_df = CoDetr.apply_thresholds(res_df)
-
-        return res_df
+        return detections
